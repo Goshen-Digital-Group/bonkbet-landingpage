@@ -80,7 +80,7 @@ export function Navbar() {
               >
                 <Link
                   href={item.href}
-                  className="text-white hover:text-yellow-200 font-black text-sm transition-all duration-300 hover:neon-text font-bangers cursor-dice"
+                  className="text-white hover:text-yellow-200 font-black text-lg transition-all duration-300 hover:neon-text font-bangers cursor-dice"
                 >
                   {item.name}
                 </Link>
