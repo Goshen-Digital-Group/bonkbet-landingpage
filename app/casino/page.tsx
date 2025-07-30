@@ -128,7 +128,7 @@ export default function CasinoPage() {
                 </CardHeader>
                 <CardContent className="text-center">
                   <div className="mb-4">
-                    <div className="text-sm text-gray-600">{game.players} players online</div>
+                    <div className="text-sm text-white">{game.players} players online</div>
                   </div>
                   <Button
                     className={`w-full ${
@@ -151,7 +151,7 @@ export default function CasinoPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">🔐 Provably Fair Gaming</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">🔐 Provably Fair Gaming</h2>
             <p className="text-lg text-gray-700 mb-8">
               All games run on-chain logic or provably fair RNG (off-chain verifiable). Every bet can be verified for
               fairness using cryptographic proofs.
@@ -161,24 +161,24 @@ export default function CasinoPage() {
               <Card className="bg-gradient-to-br from-green-50 to-emerald-50">
                 <CardContent className="p-6 text-center">
                   <div className="text-3xl mb-2">🔗</div>
-                  <h3 className="font-bold text-gray-900 mb-2">On-Chain Logic</h3>
-                  <p className="text-sm text-gray-600">Game outcomes determined by blockchain</p>
+                  <h3 className="font-bold text-white mb-2">On-Chain Logic</h3>
+                  <p className="text-sm text-white">Game outcomes determined by blockchain</p>
                 </CardContent>
               </Card>
 
               <Card className="bg-gradient-to-br from-blue-50 to-cyan-50">
                 <CardContent className="p-6 text-center">
                   <div className="text-3xl mb-2">🎲</div>
-                  <h3 className="font-bold text-gray-900 mb-2">Verifiable RNG</h3>
-                  <p className="text-sm text-gray-600">Cryptographically secure randomness</p>
+                  <h3 className="font-bold text-white mb-2">Verifiable RNG</h3>
+                  <p className="text-sm text-white">Cryptographically secure randomness</p>
                 </CardContent>
               </Card>
 
               <Card className="bg-gradient-to-br from-purple-50 to-pink-50">
                 <CardContent className="p-6 text-center">
                   <div className="text-3xl mb-2">🛡️</div>
-                  <h3 className="font-bold text-gray-900 mb-2">Transparent</h3>
-                  <p className="text-sm text-gray-600">All bets publicly verifiable</p>
+                  <h3 className="font-bold text-white mb-2">Transparent</h3>
+                  <p className="text-sm text-white">All bets publicly verifiable</p>
                 </CardContent>
               </Card>
             </div>

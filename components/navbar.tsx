@@ -11,12 +11,12 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { name: "🏠 HOME", href: "/" },
-    { name: "🎰 CASINO", href: "/casino" },
-    { name: "💎 TOKEN", href: "/token" },
-    { name: "🖼️ NFTs", href: "/nfts" },
-    { name: "👥 COMMUNITY", href: "/community" },
-    { name: "📚 DOCS", href: "/docs" },
+    { name: "HOME", href: "/" },
+    { name: "CASINO", href: "/casino" },
+    { name: "TOKEN", href: "/token" },
+    { name: "NFTs", href: "/nfts" },
+    { name: "COMMUNITY", href: "/community" },
+    { name: "DOCS", href: "/docs" },
   ]
 
   const handleLaunchCasino = () => {
@@ -25,7 +25,7 @@ export function Navbar() {
 
   return (
     <motion.nav
-      className="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 border-b-4 border-yellow-300 sticky top-0 z-50 neon-border"
+      className=" scale-95 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 border-b-4 border-yellow-300 sticky top-0 z-50 neon-border"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
@@ -42,9 +42,9 @@ export function Navbar() {
               >
                 <Image
                   src="/images/casino-of-bonk.png"
-                  alt="Casino of Bonk"
-                  width={50}
-                  height={50}
+                  alt="Bonklet"
+                  width={90}
+                  height={90}
                   className="group-hover:scale-110"
                 />
                 <motion.div
@@ -57,17 +57,12 @@ export function Navbar() {
               </motion.div>
               <div className="flex flex-col">
                 <motion.span
-                  className="font-black text-xl text-white neon-text font-bangers"
+                  className="font-black text-6xl text-white neon-text font-bangers"
                   whileHover={{ scale: 1.1, rotate: [-1, 1, -1, 1, 0] }}
                 >
-                  CASINO
+                  BONKLET
                 </motion.span>
-                <motion.span
-                  className="font-black text-sm text-white neon-text font-bangers"
-                  whileHover={{ scale: 1.1, rotate: [1, -1, 1, -1, 0] }}
-                >
-                  OF BONK
-                </motion.span>
+               
               </div>
             </Link>
           </motion.div>
@@ -103,7 +98,7 @@ export function Navbar() {
             >
               <Button
                 onClick={handleLaunchCasino}
-                className="neon-button font-black text-black font-bangers cursor-rocket"
+                className="neon-button font-black text-white font-bangers cursor-rocket"
               >
                 🚀 LAUNCH CASINO!
               </Button>
