@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Casino of Bonk - The First-Ever Let'sBonk Casino on Solana",
   description:
     "Degens play here. Bonk is the house. A decentralized, community-driven casino built on Solana with meme coin energy and provably fair games.",
-    generator: 'v0.dev'
+    generator: 'COB'
 }
 
 export default function RootLayout({
