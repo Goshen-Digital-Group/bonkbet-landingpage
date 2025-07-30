@@ -184,14 +184,14 @@ export default function HomePage() {
             </motion.div>
           </motion.div>
 
-          <motion.h1
-            className="text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400/50 via-yellow-300 to-white mb-4 neon-text glitch font-bangers cursor-dice"
-            data-text="BONKLET"
-            variants={itemVariants}
-            whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
-          >
-            BONKLET
-          </motion.h1>
+                <motion.h1
+              className="text-9xl font-black text-white mb-4 neon-text glitch font-bangers cursor-dice"
+              data-text="BONKLET"
+              variants={itemVariants}
+              whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
+            >
+              BONKLET
+            </motion.h1>
 
           <motion.div
             className="text-4xl font-black text-white mb-2 font-bangers cursor-money"
