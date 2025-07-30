@@ -186,7 +186,7 @@ export default function HomePage() {
 
           <motion.h1
             className="text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-300 to-white mb-4 neon-text glitch font-bangers cursor-dice"
-            data-text="🎰 CASINO OF BONK 🎰"
+            data-text="BONKLET"
             variants={itemVariants}
             whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
           >
@@ -203,7 +203,7 @@ export default function HomePage() {
           </motion.div>
 
           <motion.div
-            className="text-2xl font-bold text-yellow-200 mb-8 font-bangers cursor-rocket"
+            className="text-2xl font-bold text-white mb-8 font-bangers cursor-rocket"
             variants={itemVariants}
             animate={{ x: [0, -5, 5, 0] }}
             transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}
