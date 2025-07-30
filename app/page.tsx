@@ -190,7 +190,7 @@ export default function HomePage() {
             variants={itemVariants}
             whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
           >
-            🎰 CASINO OF BONK 🎰
+            BONKLET
           </motion.h1>
 
           <motion.div
@@ -199,7 +199,7 @@ export default function HomePage() {
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
           >
-            ⚡ THE FIRST-EVER LET'SBONK CASINO ON SOLANA ⚡
+          THE FIRST-EVER LET'SBONK CASINO ON SOLANA
           </motion.div>
 
           <motion.div
@@ -208,7 +208,7 @@ export default function HomePage() {
             animate={{ x: [0, -5, 5, 0] }}
             transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}
           >
-            🔥 DEGENS PLAY HERE. BONK IS THE HOUSE. 🔥
+            🔥 DEGENS PLAY HERE. BONKLET IS THE HOUSE. 🔥
           </motion.div>
 
           <motion.div className="flex flex-wrap justify-center gap-6 mb-12" variants={containerVariants}>
@@ -222,9 +222,9 @@ export default function HomePage() {
               <Button
                 onClick={handleLaunchCasino}
                 size="lg"
-                className="neon-button font-black text-2xl px-12 py-6 text-black font-bangers cursor-rocket"
+                className="neon-button font-black text-2xl px-12 py-6 text-white font-bangers cursor-rocket"
               >
-                🚀 LAUNCH CASINO NOW! 🚀
+                🚀 LAUNCH BONKLET NOW! 🚀
               </Button>
             </motion.div>
           </motion.div>
