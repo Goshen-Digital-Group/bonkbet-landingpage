@@ -16,56 +16,56 @@ export default function CasinoPage() {
       name: "Mines",
       description: "Avoid the BONK bombs. Pick safe tiles and cash out before you explode!",
       image: "/images/mines.png", // Using dice as placeholder
-      status: "Alpha",
+    status: "Live",
       players: "20",
     },
     {
       name: "Crash",
       description: "Watch the multiplier rise. Cash out before it crashes. Timing is everything.",
       image: "/images/crash.png",
-      status: "Alpha",
+     status: "Live",
       players: "890",
     },
     {
       name: "Blackjack",
       description: "Classic 21 — beat the dealer and double your Bonk.",
       image: "/images/blackjack.png",
-      status: "Coming Soon",
+      status: "Live",
       players: "24",
     },
     {
       name: "Slots",
       description: "Spin the reels of Bonk, Retardio, Doge, and more. Meme chaos guaranteed.",
       image: "/images/slots.png", // Using dice as placeholder
-      status: "Coming Soon",
+    status: "Live",
       players: "14",
     },
     {
       name: "Coin Flip",
       description: "Heads or tails? Only real degens survive the 50/50.",
       image: "/images/flip.png",
-      status: "Coming Soon",
+      status: "Live",
       players: "31",
     },
     {
       name: "HiLo",
       description: "Predict higher or lower. Bonk your way through the deck.",
       image: "/images/hilo.png",
-      status: "Coming Soon",
+    status: "Live",
       players: "37",
     },
     {
       name: "Roulette",
       description: "Red, black, or go all in on green. Spin the wheel of fate.",
       image: "/images/roulette  .png", // Using dice as placeholder
-      status: "Coming Soon",
+    status: "Live",
       players: "41",
     },
     {
       name: "Plinko",
       description: "Drop the chip. Pray to the Bonk gods. Watch it bounce.",
       image: "/images/plinko.png", // Using dice as placeholder
-      status: "Coming Soon",
+    status: "Live",
       players: "45",
     },
   ]
