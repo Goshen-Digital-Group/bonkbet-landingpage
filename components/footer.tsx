@@ -5,7 +5,7 @@ import { Twitter, MessageCircle, Github } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-black via-yellow-900 to-black border-t-4 border-yellow-400">
+    <footer className="bg-gradient-to-r from-black via-yellow-900 to-black border-t-4 border-yellow-400 ">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -32,7 +32,7 @@ export function Footer() {
             <div className="space-y-3">
               {[
                 { name: "🎰 BONKBET Games", href: "/casino" },
-                { name: "💎 $COB Token", href: "/token" },
+                { name: "💎 $KOB   Token", href: "/token" },
                 { name: "🖼️ NFT Collection", href: "/nfts" },
                 { name: "📚 Documentation", href: "/docs" },
               ].map((link) => (
