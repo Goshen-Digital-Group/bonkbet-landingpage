@@ -48,7 +48,7 @@ export function Navbar() {
                   className="group-hover:scale-110"
                 />
                 <motion.div
-                  className="absolute -top-1 -right-1"
+                  className="absolute -top-1 -right-1 pointer-events-none"
                   animate={{ scale: [1, 1.5, 1] }}
                   transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}
                 >
@@ -80,7 +80,7 @@ export function Navbar() {
               >
                 <Link
                   href={item.href}
-                  className="text-white hover:text-yellow-200 font-black text-lg transition-all duration-300 hover:neon-text font-bangers cursor-dice"
+                  className="text-white hover:text-yellow-200 font-black text-5xl transition-all duration-300 hover:neon-text font-bangers cursor-dice"
                 >
                   {item.name}
                 </Link>
@@ -98,7 +98,7 @@ export function Navbar() {
             >
               <Button
                 onClick={handleLaunchCasino}
-                className="neon-button font-black text-white font-bangers cursor-rocket"
+                className="neon-button font-black text-white text-6xl font-bangers cursor-rocket"
               >
                 🚀 LAUNCH CASINO!
               </Button>
@@ -151,7 +151,7 @@ export function Navbar() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button onClick={handleLaunchCasino} className="neon-button font-black text-black font-bangers">
+                  <Button onClick={handleLaunchCasino} className="neon-button font-black text-3xl  text-black font-bangers">
                     🚀 LAUNCH CASINO!
                   </Button>
                 </motion.div>
