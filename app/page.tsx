@@ -278,14 +278,14 @@ export default function HomePage() {
           <div className="max-w-6xl mx-auto text-center">
             <motion.h2
               className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-800 mb-8 glitch font-bangers cursor-dice"
-              data-text="🧠 WHAT IS CASINO OF BONK? 🧠"
+              data-text="WHAT IS BONKBET OF BONK? "
               initial={{ scale: 0, rotate: -180 }}
               whileInView={{ scale: 1, rotate: 0 }}
               transition={{ type: "spring", stiffness: 100, damping: 15 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.05, rotate: [0, -2, 2, 0] }}
             >
-              🧠 WHAT IS BONKBET OF BONK? 🧠
+              WHAT IS BONKBET OF BONK? 
             </motion.h2>
 
             <motion.div
@@ -296,13 +296,13 @@ export default function HomePage() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.02, rotate: [0, -0.5, 0.5, 0] }}
             >
-              <p className="text-2xl text-black leading-relaxed font-bold font-bangers">
-                🎰 Casino of Bonk (COB) is a <span className="text-yellow-800 neon-text">DECENTRALIZED</span>,
-                <span className="text-yellow-700 neon-text"> COMMUNITY-DRIVEN</span> casino built on BONKBET —
-                Solana's <span className="text-yellow-600 neon-text">MEME-POWERED</span> movement! 🚀
+              <p className="text-2xl text-white leading-relaxed font-bold font-bangers">
+                🎰 Casino of Bonk (COB) is a <span className="text-white neon-text">DECENTRALIZED</span>,
+                <span className="text-white neon-text"> COMMUNITY-DRIVEN</span> casino built on BONKBET —
+                Solana's <span className="text-white neon-text">MEME-POWERED</span> movement! 🚀
               </p>
               <motion.p
-                className="text-xl text-yellow-800 mt-4 font-bold font-bangers"
+                className="text-xl text-white mt-4 font-bold font-bangers"
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
               >
@@ -311,7 +311,7 @@ export default function HomePage() {
             </motion.div>
 
             <motion.div
-              className="text-3xl font-black text-yellow-800 neon-text font-bangers cursor-rocket"
+              className="text-3xl font-black text-white neon-text font-bangers cursor-rocket"
               initial={{ x: -200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.6, type: "spring", stiffness: 100 }}
@@ -336,7 +336,7 @@ export default function HomePage() {
         <div className="absolute inset-0 retro-grid opacity-20"></div>
         <div className="relative container mx-auto px-4">
           <motion.h2
-            className="text-6xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-700 to-yellow-900 mb-12 font-bangers cursor-dice"
+            className="text-6xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-400 mb-12 font-bangers cursor-dice"
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
@@ -355,22 +355,22 @@ export default function HomePage() {
           >
             {[
               {
-                icon: <Lightbulb className="w-8 h-8" />,
+                icon: <Lightbulb className="w-8 h-8 text-white" />,
                 title: "FIRST MEME CASINO",
                 desc: "The world's first casino built specifically for the meme coin community on Solana!",
               },
               {
-                icon: <Users className="w-8 h-8" />,
+                icon: <Users className="w-8 h-8 text-white" />,
                 title: "COMMUNITY OWNED",
                 desc: "100% community-driven with DAO governance. Players decide the future!",
               },
               {
-                icon: <Zap className="w-8 h-8" />,
+                icon: <Zap className="w-8 h-8 text-white" />,
                 title: "INSTANT PAYOUTS",
                 desc: "Lightning-fast Solana blockchain ensures instant wins and withdrawals!",
               },
               {
-                icon: <Target className="w-8 h-8" />,
+                icon: <Target className="w-8 h-8 text-white" />,
                 title: "PROVABLY FAIR",
                 desc: "Every game is cryptographically verifiable. No house tricks, pure fairness!",
               },
@@ -420,7 +420,7 @@ export default function HomePage() {
 
         <div className="relative container mx-auto px-4">
           <motion.h2
-            className="text-7xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-700 mb-6 font-bangers cursor-dice"
+            className="text-7xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-600  from-yellow-200 to-yellow-400 mb-6 font-bangers cursor-dice"
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
@@ -432,7 +432,7 @@ export default function HomePage() {
           </motion.h2>
 
           <motion.p
-            className="text-center text-yellow-800 mb-12 text-2xl font-bold neon-text font-bangers cursor-money"
+            className="text-center text-white mb-12 text-2xl font-bold neon-text font-bangers cursor-money"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ delay: 0.3, type: "spring", stiffness: 100 }}
@@ -466,7 +466,7 @@ export default function HomePage() {
                       animate={{ scale: [1, 1.1, 1] }}
                       transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
                     >
-                      <Badge className="absolute top-4 right-4 bg-black text-yellow-400 font-black font-bangers">
+                      <Badge className="absolute top-4 right-4 bg-black text-yellow-400 text-2xl font-black font-bangers">
                         {game.status}
                       </Badge>
                     </motion.div>
@@ -480,25 +480,25 @@ export default function HomePage() {
                         <Image
                           src={game.image || "/placeholder.svg"}
                           alt={game.name}
-                          width={150}
-                          height={100}
+                          width={300}
+                          height={200}
                           className="mx-auto transition-all duration-500"
                         />
                       </motion.div>
                     </div>
 
                     <motion.h3
-                      className="text-3xl font-black text-black mb-4 neon-text font-bangers"
+                      className="text-5xl font-black text-white leading-tight tracking-widest mb-4 neon-text font-bangers"
                       whileHover={{ scale: 1.1, rotate: [0, -1, 1, 0] }}
                     >
                       {game.name}
                     </motion.h3>
 
-                    <p className="text-black font-bold text-lg mb-6 font-bangers">{game.description}</p>
+                    <p className="text-white font-bold text-1xl mb-6 font-bangers">{game.description}</p>
 
                     <motion.div whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }} whileTap={{ scale: 0.95 }}>
                       <Button
-                        className="neon-button font-black text-black w-full text-lg font-bangers cursor-rocket mb-2"
+                        className="neon-button font-black text-white w-full text-lg font-bangers cursor-rocket mb-2 rounded-lg"
                         onClick={() => window.open(game.link, "_blank")}
                       >
                         🎮 PLAY BONKBET NOW! 🎮
@@ -523,15 +523,15 @@ export default function HomePage() {
         <div className="absolute inset-0 retro-grid opacity-30"></div>
         <div className="relative container mx-auto px-4">
           <motion.h2
-            className="text-6xl font-black text-center text-black mb-12 font-bangers cursor-dice"
+            className="text-6xl font-black text-center text-white mb-12 font-bangers cursor-dice"
             initial={{ scale: 0, rotate: -180 }}
             whileInView={{ scale: 1, rotate: 0 }}
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
           >
-            📚 DOCUMENTATION & GUIDES 📚
-          </motion.h2>
+            📚 DOCUMENTATION 📚
+           </motion.h2>
 
           <motion.div
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
@@ -542,19 +542,19 @@ export default function HomePage() {
           >
             {[
               {
-                icon: <FileText className="w-8 h-8" />,
+                icon: <FileText className="w-8 h-8 w text-white text-1xl" />,
                 title: "HOW TO PLAY",
                 desc: "Complete guide to all casino games, rules, and strategies for maximum wins!",
                 link: "/docs/how-to-play",
               },
               {
-                icon: <Zap className="w-8 h-8" />,
+                icon: <Zap className="w-8 h-8 text-white text-1xl" />,
                 title: "GETTING STARTED",
                 desc: "Step-by-step tutorial to connect wallet, deposit, and start playing instantly!",
                 link: "/docs/getting-started",
               },
               {
-                icon: <Target className="w-8 h-8" />,
+                icon: <Target className="w-8 h-8 text-white text-1xl" />,
                 title: "PROVABLY FAIR",
                 desc: "Learn how our cryptographic system ensures every game is 100% fair and verifiable!",
                 link: "/docs/provably-fair",
@@ -612,15 +612,15 @@ export default function HomePage() {
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <motion.h2
-              className="text-7xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-700 to-yellow-900 mb-12 glitch font-bangers cursor-money"
-              data-text="💎 $COB TOKEN - CHIP OF THE HOUSE! 💎"
+              className="text-7xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-400 mb-12 glitch font-bangers cursor-money"
+              data-text="💎 TOKENOMICS DETAILS💎"
               initial={{ scale: 0, rotate: 180 }}
               whileInView={{ scale: 1, rotate: 0 }}
               transition={{ type: "spring", stiffness: 80, damping: 15 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
             >
-              💎 $COB TOKEN - CHIP OF THE HOUSE! 💎
+            💎 TOKENOMICS DETAILS💎
             </motion.h2>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -643,10 +643,10 @@ export default function HomePage() {
 
                     <div className="space-y-4 text-white font-bold font-bangers">
                       {[
-                        { label: "SYMBOL:", value: "$COB", badge: "bg-white text-black" },
-                        { label: "NETWORK:", value: "SOLANA ⚡", badge: "bg-yellow-300 text-black" },
+                        { label: "SYMBOL:", value: "$BOK", badge: "bg-white text-white" },
+                        { label: "NETWORK:", value: "SOLANA ", badge: "bg-yellow-300 text-white" },
                         { label: "SUPPLY:", value: "1,000,000,000 COB", badge: null },
-                        { label: "TAX:", value: "0/0 FAIR! 🚀", badge: "bg-white text-black" },
+                        { label: "TAX:", value: "0/0 FAIR! 🚀", badge: "bg-white text-white" },
                       ].map((item, index) => (
                         <motion.div
                           key={index}
@@ -671,12 +671,12 @@ export default function HomePage() {
                       className="mt-6 p-4 bg-black/50 rounded-lg neon-border cursor-money"
                       whileHover={{ scale: 1.02 }}
                     >
-                      <p className="text-xs text-yellow-200 mb-2 font-bold font-bangers">CONTRACT ADDRESS:</p>
+                      <p className="text-md text-yellow-200 mb-2 font-bold font-bangers">CONTRACT ADDRESS:</p>
                       <div className="flex items-center gap-2 text-xs font-mono text-white bg-gray-900 p-2 rounded">
-                        <span className="flex-1 truncate">8xBeKjLsd2ogWftM15mUzWYPp4qQrTna98CZBonkCoB7</span>
+                        <span className="flex-1 truncate">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
                         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                           <Button size="sm" className="neon-button p-1 cursor-rocket">
-                            <Copy className="w-4 h-4" />
+                            <Copy className="w-10 h-10" />
                           </Button>
                         </motion.div>
                       </div>
@@ -695,14 +695,14 @@ export default function HomePage() {
                 <Card className="bg-gradient-to-br from-yellow-400 to-yellow-600 neon-border cursor-money">
                   <CardContent className="p-8">
                     <motion.h3
-                      className="text-3xl font-black text-black mb-6 neon-text font-bangers"
+                      className="text-3xl font-black text-white mb-6 neon-text font-bangers"
                       animate={{ scale: [1, 1.05, 1] }}
                       transition={{ duration: 2.5, repeat: Number.POSITIVE_INFINITY }}
                     >
                       ⚡ UTILITY POWER! ⚡
                     </motion.h3>
 
-                    <div className="space-y-4">
+                    <div className="space-y-4 text-white font-bold font-bangers">
                       {[
                         { icon: "🪙", text: "PLAY GAMES WITH $COB!" },
                         { icon: "🎁", text: "EARN CASINO PROFITS!" },
@@ -712,7 +712,7 @@ export default function HomePage() {
                       ].map((item, index) => (
                         <motion.div
                           key={index}
-                          className="flex items-center gap-3 text-black font-bold font-bangers"
+                          className="flex items-center gap-3 text-white font-bold font-bangers"
                           initial={{ opacity: 0, x: -30 }}
                           whileInView={{ opacity: 1, x: 0 }}
                           transition={{ delay: index * 0.1 }}
@@ -752,7 +752,7 @@ export default function HomePage() {
 
         <div className="relative container mx-auto px-4 text-center">
           <motion.h2
-            className="text-8xl font-black text-black mb-8 glitch font-bangers cursor-rocket"
+            className="text-8xl font-black text-white mb-8 glitch font-bangers cursor-rocket"
             data-text="🚀 READY TO JOIN THE BONK REVOLUTION?! 🚀"
             initial={{ scale: 0, rotate: -180 }}
             whileInView={{ scale: 1, rotate: 0 }}
@@ -761,22 +761,22 @@ export default function HomePage() {
             animate={{ x: [0, -5, 5, 0] }}
             whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
           >
-            🚀 READY TO JOIN THE BONK REVOLUTION?! 🚀
+            🚀 READY TO JOIN THE BONKBET REVOLUTION?! 🚀
           </motion.h2>
 
           <motion.p
-            className="text-3xl font-black text-black mb-12 font-bangers cursor-dice"
+            className="text-3xl font-black text-white mb-12 font-bangers cursor-dice"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3, type: "spring", stiffness: 80 }}
             viewport={{ once: true }}
             animate={{ scale: [1, 1.05, 1] }}
           >
-            ⚡ GET YOUR $COB TOKENS AND START PLAYING IN THE MOST DEGEN CASINO ON SOLANA! ⚡
+            ⚡ GET YOUR $KOB TOKENS AND START PLAYING IN THE MOST DEGEN BONKBET ON SOLANA! ⚡
           </motion.p>
 
           <motion.div
-            className="flex flex-wrap justify-center gap-6"
+            className="flex flex-wrap justify-center gap-6 text-white"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"

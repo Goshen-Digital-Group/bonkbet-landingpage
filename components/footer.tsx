@@ -74,12 +74,12 @@ export function Footer() {
 
           {/* Actions */}
           <div>
-            <h3 className="font-black text-2xl mb-6 text-yellow-400 neon-text font-bangers">🚀 GET STARTED</h3>
+            <h3 className="font-black text-2xl mb-6 text-yellow-400/10 neon-text font-bangers">🚀 GET STARTED</h3>
             <div className="space-y-4">
-              <Button className="w-full neon-button font-black text-black hover:scale-105 font-bangers">
+              <Button className="w-full neon-button font-black text-white hover:scale-105 font-bangers">
                 🎰 LAUNCH BONKBET!
               </Button>
-              <Button className="w-full bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-black font-black neon-border hover:shake font-bangers">
+              <Button className="w-full bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-white font-black neon-border hover:shake font-bangers">
                 💰 BUY
               </Button>
             </div>
