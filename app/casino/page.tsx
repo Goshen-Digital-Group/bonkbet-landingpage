@@ -10,14 +10,14 @@ export default function CasinoPage() {
       description: "Bet on a roll from 0 to 100. Choose your odds. High risk, high reward.",
       image: "/images/dice.png",
       status: "Live",
-      players: "1,234",
+      players: "24",
     },
     {
       name: "Mines",
       description: "Avoid the BONK bombs. Pick safe tiles and cash out before you explode!",
-      image: "/images/dice.png", // Using dice as placeholder
+      image: "/images/mines.png", // Using dice as placeholder
       status: "Alpha",
-      players: "567",
+      players: "20",
     },
     {
       name: "Crash",
@@ -31,42 +31,42 @@ export default function CasinoPage() {
       description: "Classic 21 — beat the dealer and double your Bonk.",
       image: "/images/blackjack.png",
       status: "Coming Soon",
-      players: "0",
+      players: "24",
     },
     {
       name: "Slots",
       description: "Spin the reels of Bonk, Retardio, Doge, and more. Meme chaos guaranteed.",
-      image: "/images/dice.png", // Using dice as placeholder
+      image: "/images/slots.png", // Using dice as placeholder
       status: "Coming Soon",
-      players: "0",
+      players: "14",
     },
     {
       name: "Coin Flip",
       description: "Heads or tails? Only real degens survive the 50/50.",
       image: "/images/flip.png",
       status: "Coming Soon",
-      players: "0",
+      players: "31",
     },
     {
       name: "HiLo",
       description: "Predict higher or lower. Bonk your way through the deck.",
       image: "/images/hilo.png",
       status: "Coming Soon",
-      players: "0",
+      players: "37",
     },
     {
       name: "Roulette",
       description: "Red, black, or go all in on green. Spin the wheel of fate.",
-      image: "/images/dice.png", // Using dice as placeholder
+      image: "/images/roulette.png", // Using dice as placeholder
       status: "Coming Soon",
-      players: "0",
+      players: "41",
     },
     {
       name: "Plinko",
       description: "Drop the chip. Pray to the Bonk gods. Watch it bounce.",
-      image: "/images/dice.png", // Using dice as placeholder
+      image: "/images/plinko.png", // Using dice as placeholder
       status: "Coming Soon",
-      players: "0",
+      players: "45",
     },
   ]
 
