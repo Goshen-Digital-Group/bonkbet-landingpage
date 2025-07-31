@@ -389,14 +389,14 @@ export default function HomePage() {
                   <CardContent className="p-6 text-center h-full flex flex-col justify-between">
                     <div>
                       <motion.div
-                        className="flex justify-center mb-4 text-black"
+                        className="flex justify-center mb-4 text-white"
                         animate={{ scale: [1, 1.1, 1] }}
                         transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
                       >
                         {feature.icon}
                       </motion.div>
-                      <h3 className="text-xl font-black text-black mb-4 neon-text font-bangers">{feature.title}</h3>
-                      <p className="text-black font-bold font-bangers">{feature.desc}</p>
+                      <h3 className="text-xl font-black text-white mb-4 neon-text font-bangers">{feature.title}</h3>
+                      <p className="text-white font-bold font-bangers">{feature.desc}</p>
                     </div>
                   </CardContent>
                 </Card>
