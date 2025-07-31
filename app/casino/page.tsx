@@ -75,7 +75,7 @@ export default function CasinoPage() {
       {/* Header */}
       <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">🎰 Casino Games</h1>
+          <h1 className="text-5xl font-bold mb-4">🎰 Bonkbet Games</h1>
           <p className="text-xl opacity-90 mb-8">
             All games are designed for fun, fast play, and provable fairness — with meme-inspired UI.
           </p>

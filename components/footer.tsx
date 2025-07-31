@@ -24,7 +24,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-yellow-200 text-sm font-bold font-bangers">
-              🎰 The first-ever Let'sBonk Casino on Solana. Built for players. Owned by the community. Fueled by Bonk.
+              🎰 The first-ever Bonkbet Casino on Solana. Built for players. Owned by the community. Fueled by BONKBET.
               🚀
             </p>
           </div>
@@ -34,7 +34,7 @@ export function Footer() {
             <h3 className="font-black text-2xl mb-6 text-yellow-400 neon-text font-bangers">🔗 QUICK LINKS</h3>
             <div className="space-y-3">
               {[
-                { name: "🎰 Casino Games", href: "/casino" },
+                { name: "🎰 BONKBET Games", href: "/casino" },
                 { name: "💎 $COB Token", href: "/token" },
                 { name: "🖼️ NFT Collection", href: "/nfts" },
                 { name: "📚 Documentation", href: "/docs" },
@@ -77,10 +77,10 @@ export function Footer() {
             <h3 className="font-black text-2xl mb-6 text-yellow-400 neon-text font-bangers">🚀 GET STARTED</h3>
             <div className="space-y-4">
               <Button className="w-full neon-button font-black text-black hover:scale-105 font-bangers">
-                🎰 LAUNCH CASINO!
+                🎰 LAUNCH BONKBET!
               </Button>
               <Button className="w-full bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-black font-black neon-border hover:shake font-bangers">
-                💰 BUY $COB!
+                💰 BUY
               </Button>
             </div>
           </div>
@@ -88,7 +88,7 @@ export function Footer() {
 
         <div className="border-t-2 border-yellow-400 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-yellow-200 text-sm font-bold font-bangers">
-            © 2025 Casino of Bonk. All rights reserved. 🎰
+            © 2025 Casino of BONKBET. All rights reserved. 🎰
           </p>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
             <span className="text-yellow-200 text-sm font-bold font-bangers">

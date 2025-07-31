@@ -39,7 +39,7 @@ export function Navbar() {
               >
                 <Image
                   src="/images/casino-of-bonk.png"
-                  alt="Bonklet"
+                  alt="Bonkbet"
                   width={90}
                   height={90}
                   className="group-hover:scale-110"
@@ -57,7 +57,7 @@ export function Navbar() {
                   className="font-black text-4xl text-white neon-text font-bangers"
                   whileHover={{ scale: 1.1, rotate: [-1, 1, -1, 1, 0] }}
                 >
-                  BONKLET
+                 BONKBET
                 </motion.span>
               </div>
             </Link>
@@ -98,7 +98,7 @@ export function Navbar() {
                 onClick={handleLaunchCasino}
                 className="neon-button font-black text-white text-3xl font-bangers cursor-rocket"
               >
-                🚀 LAUNCH CASINO!
+                🚀 LAUNCH BONKBET!
               </Button>
             </motion.div>
           </div>
@@ -152,7 +152,7 @@ export function Navbar() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Button onClick={handleLaunchCasino} className="neon-button font-black text-1xl  text-black font-bangers">
-                    🚀 LAUNCH CASINO!
+                    🚀 LAUNCH BONKBET!
                   </Button>
                 </motion.div>
               </div>

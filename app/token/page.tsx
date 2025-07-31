@@ -60,7 +60,7 @@ export default function TokenPage() {
               </Button>
             </div>
             <div className="font-mono text-sm bg-black/20 rounded p-3 break-all">
-              8xBeKjLsd2ogWftM15mUzWYPp4qQrTna98CZBonkCoB7
+              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             </div>
             <p className="text-xs opacity-70 mt-2">Always verify the contract address before trading</p>
           </div>
