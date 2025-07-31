@@ -57,7 +57,7 @@ export default function CasinoPage() {
     {
       name: "Roulette",
       description: "Red, black, or go all in on green. Spin the wheel of fate.",
-      image: "/images/roulette.png", // Using dice as placeholder
+      image: "/images/roulette  .png", // Using dice as placeholder
       status: "Coming Soon",
       players: "41",
     },
