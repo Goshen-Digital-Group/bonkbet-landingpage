@@ -336,7 +336,7 @@ export default function HomePage() {
         <div className="absolute inset-0 retro-grid opacity-20"></div>
         <div className="relative container mx-auto px-4">
           <motion.h2
-            className="text-6xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-400 mb-12 font-bangers cursor-dice"
+            className="text-6xl font-black text-center text-transparent text-[#d69a08] mb-12 font-bangers cursor-dice"
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
@@ -641,7 +641,7 @@ export default function HomePage() {
                       🔥 TOKEN DETAILS 🔥
                     </motion.h3>
 
-                    <div className="space-y-4 text-white font-bold font-bangers">
+                    <div className="space-y-4 text-[#b88406] font-bold font-bangers">
                       {[
                         { label: "SYMBOL:", value: "$BOK", badge: "bg-white text-white" },
                         { label: "NETWORK:", value: "SOLANA ", badge: "bg-yellow-300 text-white" },
@@ -702,7 +702,7 @@ export default function HomePage() {
                       ⚡ UTILITY POWER! ⚡
                     </motion.h3>
 
-                    <div className="space-y-4 text-white font-bold font-bangers">
+                    <div className="space-y-4 text-white text-2xl font-bold font-bangers">
                       {[
                         { icon: "🪙", text: "PLAY GAMES WITH $COB!" },
                         { icon: "🎁", text: "EARN CASINO PROFITS!" },
