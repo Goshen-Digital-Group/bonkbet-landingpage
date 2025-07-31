@@ -12,7 +12,7 @@ export function Footer() {
           <div className="col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <Image
-                src="/images/casino-of-bonk.png"
+                 src="/images/BONKBET.png"
                 alt="Casino of Bonk"
                 width={50}
                 height={50}

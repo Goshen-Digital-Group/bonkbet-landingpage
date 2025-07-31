@@ -20,63 +20,63 @@ export default function HomePage() {
       description: "Roll the bones! 0-100 chaos! YOLO or go home! 🎲",
       image: "/images/dice.png",
       status: "🔥 LIVE",
-      link: "https://casino-of-bonk.vercel.app",
+      link: "",
     },
     {
       name: "CRASH",
       description: "TO THE MOON OR CRASH & BURN! Diamond hands only! 🚀",
       image: "/images/crash.png",
       status: "🔥 LIVE",
-      link: "https://casino-of-bonk.vercel.app",
+      link: "",
     },
     {
       name: "BLACKJACK",
       description: "21 or BUST! Beat the house like a true degen! 🃏",
       image: "/images/blackjack.png",
       status: "🔥 LIVE",
-      link: "https://casino-of-bonk.vercel.app",
+      link: "",
     },
     {
       name: "FLIP",
       description: "Heads or tails? 50/50 PURE ADRENALINE! 🪙",
       image: "/images/flip.png",
       status: "🔥 LIVE",
-      link: "https://casino-of-bonk.vercel.app",
+      link: "",
     },
     {
       name: "HILO",
       description: "Higher or lower? Predict like a fortune teller! 🔮",
       image: "/images/hilo.png",
       status: "🔥 LIVE",
-      link: "https://casino-of-bonk.vercel.app",
+      link: "",
     },
     {
       name: "MINES",
       description: "Avoid the BONK bombs! Pick safe tiles and cash out! 💣",
       image: "/images/mines.png",
       status: "🔥 LIVE",
-      link: "https://casino-of-bonk.vercel.app",
+      link: "",
     },
     {
       name: "SLOTS",
       description: "Spin the reels! Bonk, Retardio, Doge chaos! 🎰",
       image: "/images/slots.png",
       status: "🔥 LIVE",
-      link: "https://casino-of-bonk.vercel.app",
+      link: "",
     },
     {
       name: "ROULETTE",
       description: "Red, black, or go all in on green! Spin the wheel! 🎡",
       image: "/images/roulette.png",
       status: "🔥 LIVE",
-      link: "https://casino-of-bonk.vercel.app",
+      link: "",
     },
     {
       name: "PLINKO",
       description: "Drop the chip! Pray to the Bonk gods! Watch it bounce! 🏀",
       image: "/images/plinko.png",
       status: "🔥 LIVE",
-      link: "https://casino-of-bonk.vercel.app",
+      link: "",
     },
   ]
 
@@ -104,7 +104,7 @@ export default function HomePage() {
   }
 
   const handleLaunchCasino = () => {
-    window.open("https://casino-of-bonk.vercel.app", "_blank")
+    window.open("", "_blank")
   }
 
   return (
@@ -175,7 +175,7 @@ export default function HomePage() {
               transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
             >
               <Image
-                src="/images/casino-of-bonk.png"
+                src="/images/BONKBET.png"
                 alt="Casino of Bonk Logo"
                 width={300}
                 height={300}

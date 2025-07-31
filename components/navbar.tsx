@@ -38,7 +38,7 @@ export function Navbar() {
                 transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
               >
                 <Image
-                  src="/images/casino-of-bonk.png"
+                       src="/images/BONKBET.png"
                   alt="Bonkbet"
                   width={90}
                   height={90}
