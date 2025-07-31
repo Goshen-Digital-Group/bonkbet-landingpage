@@ -753,7 +753,7 @@ export default function HomePage() {
         <div className="relative container mx-auto px-4 text-center">
           <motion.h2
             className="text-8xl font-black text-white mb-8 glitch font-bangers cursor-rocket"
-            data-text="🚀 READY TO JOIN THE BONK REVOLUTION?! 🚀"
+            data-text="READY TO JOIN THE BONK REVOLUTION?!"
             initial={{ scale: 0, rotate: -180 }}
             whileInView={{ scale: 1, rotate: 0 }}
             transition={{ type: "spring", stiffness: 60, damping: 15 }}
@@ -761,7 +761,7 @@ export default function HomePage() {
             animate={{ x: [0, -5, 5, 0] }}
             whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
           >
-            🚀 READY TO JOIN THE BONKBET REVOLUTION?! 🚀
+            READY TO JOIN THE BONKBET REVOLUTION?!
           </motion.h2>
 
           <motion.p
