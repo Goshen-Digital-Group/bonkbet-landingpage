@@ -186,11 +186,11 @@ export default function HomePage() {
 
                 <motion.h1
               className="text-9xl font-black text-white mb-4 neon-text glitch font-bangers cursor-dice"
-              data-text="BONKLET"
+              data-text="BONKBET"
               variants={itemVariants}
               whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
             >
-              BONKLET
+             BONKBET
             </motion.h1>
 
           <motion.div
@@ -199,7 +199,7 @@ export default function HomePage() {
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
           >
-          THE FIRST-EVER LET'SBONK CASINO ON SOLANA
+          THE FIRST-EVER BONKBET CASINO ON SOLANA
           </motion.div>
 
           <motion.div
@@ -208,7 +208,7 @@ export default function HomePage() {
             animate={{ x: [0, -5, 5, 0] }}
             transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}
           >
-            🔥 DEGENS PLAY HERE. BONKLET IS THE HOUSE. 🔥
+            🔥 DEGENS PLAY HERE. BONKBET IS THE HOUSE. 🔥
           </motion.div>
 
           <motion.div className="flex flex-wrap justify-center gap-6 mb-12" variants={containerVariants}>
@@ -224,7 +224,7 @@ export default function HomePage() {
                 size="lg"
                 className="neon-button font-black text-2xl px-12 py-6 text-white font-bangers cursor-rocket"
               >
-                🚀 LAUNCH BONKLET NOW! 🚀
+                🚀 LAUNCH BONKBET NOW! 🚀
               </Button>
             </motion.div>
           </motion.div>
@@ -285,7 +285,7 @@ export default function HomePage() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.05, rotate: [0, -2, 2, 0] }}
             >
-              🧠 WHAT IS CASINO OF BONK? 🧠
+              🧠 WHAT IS BONKBET OF BONK? 🧠
             </motion.h2>
 
             <motion.div
@@ -298,7 +298,7 @@ export default function HomePage() {
             >
               <p className="text-2xl text-black leading-relaxed font-bold font-bangers">
                 🎰 Casino of Bonk (COB) is a <span className="text-yellow-800 neon-text">DECENTRALIZED</span>,
-                <span className="text-yellow-700 neon-text"> COMMUNITY-DRIVEN</span> casino built on Let'sBonk —
+                <span className="text-yellow-700 neon-text"> COMMUNITY-DRIVEN</span> casino built on BONKBET —
                 Solana's <span className="text-yellow-600 neon-text">MEME-POWERED</span> movement! 🚀
               </p>
               <motion.p
@@ -319,7 +319,7 @@ export default function HomePage() {
               animate={{ x: [0, -5, 5, 0] }}
               whileHover={{ scale: 1.1, rotate: [0, -1, 1, 0] }}
             >
-              🔥 BUILT FOR PLAYERS. OWNED BY COMMUNITY. FUELED BY BONK. 🔥
+              🔥 BUILT FOR PLAYERS. OWNED BY COMMUNITY. FUELED BY BONKBET. 🔥
             </motion.div>
           </div>
         </div>
@@ -343,7 +343,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
           >
-            💡 WHY CASINO OF BONK IS UNIQUE 💡
+            💡 WHY BONKBET IS UNIQUE 💡
           </motion.h2>
 
           <motion.div
@@ -428,7 +428,7 @@ export default function HomePage() {
             animate={{ y: [0, -10, 0] }}
             whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
           >
-            🕹️ CASINO GAMES ARE LIVE! 🕹️
+            🕹️ BONKBET GAMES ARE LIVE! 🕹️
           </motion.h2>
 
           <motion.p
@@ -501,7 +501,7 @@ export default function HomePage() {
                         className="neon-button font-black text-black w-full text-lg font-bangers cursor-rocket mb-2"
                         onClick={() => window.open(game.link, "_blank")}
                       >
-                        🎮 PLAY NOW! 🎮
+                        🎮 PLAY BONKBET NOW! 🎮
                       </Button>
                     </motion.div>
                   </CardContent>
