@@ -13,10 +13,7 @@ export function Navbar() {
   const navItems = [
     { name: "HOME", href: "/" },
     { name: "CASINO", href: "/casino" },
-    { name: "TOKEN", href: "/token" },
-    { name: "NFTs", href: "/nfts" },
-    { name: "COMMUNITY", href: "/community" },
-    { name: "DOCS", href: "/docs" },
+    { name: "DOCS", href: "https://pump.fun" },
   ]
 
   const handleLaunchCasino = () => {
@@ -57,12 +54,11 @@ export function Navbar() {
               </motion.div>
               <div className="flex flex-col">
                 <motion.span
-                  className="font-black text-6xl text-white neon-text font-bangers"
+                  className="font-black text-4xl text-white neon-text font-bangers"
                   whileHover={{ scale: 1.1, rotate: [-1, 1, -1, 1, 0] }}
                 >
                   BONKLET
                 </motion.span>
-               
               </div>
             </Link>
           </motion.div>
@@ -80,7 +76,9 @@ export function Navbar() {
               >
                 <Link
                   href={item.href}
-                  className="text-white hover:text-yellow-200 font-black text-5xl transition-all duration-300 hover:neon-text font-bangers cursor-dice"
+                  className="text-white hover:text-yellow-200 font-black text-3xl transition-all duration-300 hover:neon-text font-bangers cursor-dice"
+                  target={item.href.startsWith("http") ? "_blank" : undefined}
+                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 >
                   {item.name}
                 </Link>
@@ -98,7 +96,7 @@ export function Navbar() {
             >
               <Button
                 onClick={handleLaunchCasino}
-                className="neon-button font-black text-white text-6xl font-bangers cursor-rocket"
+                className="neon-button font-black text-white text-3xl font-bangers cursor-rocket"
               >
                 🚀 LAUNCH CASINO!
               </Button>
@@ -139,6 +137,8 @@ export function Navbar() {
                       href={item.href}
                       className="text-white hover:text-yellow-200 font-black text-lg hover:neon-text font-bangers"
                       onClick={() => setIsOpen(false)}
+                      target={item.href.startsWith("http") ? "_blank" : undefined}
+                      rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     >
                       {item.name}
                     </Link>
@@ -151,7 +151,7 @@ export function Navbar() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button onClick={handleLaunchCasino} className="neon-button font-black text-3xl  text-black font-bangers">
+                  <Button onClick={handleLaunchCasino} className="neon-button font-black text-1xl  text-black font-bangers">
                     🚀 LAUNCH CASINO!
                   </Button>
                 </motion.div>
