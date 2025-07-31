@@ -13,15 +13,12 @@ export function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <Image
                 src="/images/BONKBET.png"
-                alt="Casino of Bonk"
+                alt="BONKBET"
                 width={50}
                 height={50}
                 className="spin-slow hover:scale-110"
               />
-              <div className="flex flex-col">
-                <span className="font-black text-2xl text-white font-bangers">CASINO</span>
-                <span className="font-black text-lg text-white font-bangers">OF BONK</span>
-              </div>
+
             </div>
             <p className="text-white text-base font-bold font-bangers">
               🎰 The first-ever Bonkbet Casino on Solana. Built for players. Owned by the community. Fueled by BONKBET.
