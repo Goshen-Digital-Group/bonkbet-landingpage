@@ -224,7 +224,7 @@ export default function HomePage() {
                 size="lg"
                 className="neon-button font-black text-2xl px-12 py-6 text-white font-bangers cursor-rocket"
               >
-                🚀 LAUNCH BONKBET NOW! 🚀
+                🚀BUY $BB🚀
               </Button>
             </motion.div>
           </motion.div>
