@@ -176,7 +176,7 @@ export default function HomePage() {
             >
               <Image
                 src="/images/BONKBET.png"
-                alt="Casino of Bonk Logo"
+                alt="Bonkbet"
                 width={300}
                 height={300}
                 className="mx-auto mb-6 cursor-rocket"
@@ -265,7 +265,7 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* WHAT IS COB */}
+      {/* WHAT IS BONKBET */}
       <motion.section
         className="py-20 bg-gradient-to-r from-yellow-500 via-yellow-400 to-white relative"
         initial={{ opacity: 0 }}
@@ -297,7 +297,7 @@ export default function HomePage() {
               whileHover={{ scale: 1.02, rotate: [0, -0.5, 0.5, 0] }}
             >
               <p className="text-2xl text-white leading-relaxed font-bold font-bangers">
-                🎰 Casino of Bonk (COB) is a <span className="text-white neon-text">DECENTRALIZED</span>,
+                🎰 BonkBet (BB) is a <span className="text-white neon-text">DECENTRALIZED</span>,
                 <span className="text-white neon-text"> COMMUNITY-DRIVEN</span> casino built on BONKBET —
                 Solana's <span className="text-white neon-text">MEME-POWERED</span> movement! 🚀
               </p>
@@ -406,7 +406,7 @@ export default function HomePage() {
         </div>
       </motion.section>
 
-      {/* CASINO GAMES ARE LIVE */}
+      {/* BONK GAMES ARE LIVE */}
       <motion.section
         className="py-20 bg-gradient-to-br from-yellow-200 via-yellow-100 to-white relative"
         initial={{ opacity: 0 }}
@@ -530,7 +530,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
           >
-            📚 DOCUMENTATION 📚
+            📚 BONKBET DOCUMENTATION 📚
            </motion.h2>
 
           <motion.div
@@ -544,7 +544,7 @@ export default function HomePage() {
               {
                 icon: <FileText className="w-8 h-8 w text-white text-1xl" />,
                 title: "HOW TO PLAY",
-                desc: "Complete guide to all casino games, rules, and strategies for maximum wins!",
+                desc: "Complete guide to all Bonkbet games, rules, and strategies for maximum wins!",
                 link: "/docs/how-to-play",
               },
               {
@@ -620,7 +620,7 @@ export default function HomePage() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
             >
-            💎 TOKENOMICS DETAILS💎
+            💎 BONKBET Token Details💎
             </motion.h2>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -643,7 +643,7 @@ export default function HomePage() {
 
                     <div className="space-y-4 text-[#b88406] font-bold font-bangers">
                       {[
-                        { label: "SYMBOL:", value: "$BOK", badge: "bg-white text-white" },
+                        { label: "SYMBOL:", value: "$BB", badge: "bg-white text-white" },
                         { label: "NETWORK:", value: "SOLANA ", badge: "bg-yellow-300 text-white" },
                         { label: "SUPPLY:", value: "1,000,000,000 COB", badge: null },
                         { label: "TAX:", value: "0/0 FAIR! 🚀", badge: "bg-white text-white" },
@@ -753,7 +753,7 @@ export default function HomePage() {
         <div className="relative container mx-auto px-4 text-center">
           <motion.h2
             className="text-8xl font-black text-white mb-8 glitch font-bangers cursor-rocket"
-            data-text="READY TO JOIN THE BONK REVOLUTION?!"
+            data-text="READY TO JOIN THE BONKBET REVOLUTION?!"
             initial={{ scale: 0, rotate: -180 }}
             whileInView={{ scale: 1, rotate: 0 }}
             transition={{ type: "spring", stiffness: 60, damping: 15 }}
@@ -772,7 +772,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             animate={{ scale: [1, 1.05, 1] }}
           >
-            ⚡ GET YOUR $KOB TOKENS AND START PLAYING IN THE MOST DEGEN BONKBET ON SOLANA! ⚡
+            ⚡ GET YOUR $BB TOKENS AND START PLAYING IN THE MOST DEGEN BONKBET ON SOLANA! ⚡
           </motion.p>
 
           <motion.div
@@ -784,7 +784,7 @@ export default function HomePage() {
           >
             {[
               { text: "🎟️ JOIN NFT WHITELIST!", link: "/nfts" },
-              { text: "🗳️ JOIN COMMUNITY DAO!", link: "/community" },
+              { text: "🗳️ JOIN COMMUNITY!", link: "/community" },
             ].map((button, index) => (
               <motion.div
                 key={index}
