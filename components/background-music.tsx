@@ -82,20 +82,12 @@ export function BackgroundMusic() {
         transition={{ delay: 2 }}
       >
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Button onClick={toggleMusic} className="neon-button font-bold text-3xl text-white font-bangers" size="lg">
+          <Button onClick={toggleMusic} className="neon-button font-bold text-3xl py-5 rounded-3xl text-white font-bangers" size="lg">
             {isPlaying ? "🎵 PAUSE" : "🎵 PLAY"}
           </Button>
         </motion.div>
 
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Button
-            onClick={toggleMute}
-            className="bg-yellow-600 hover:bg-yellow-700 text-white font-black font-bangers rounded-lg"
-            size="lg"
-          >
-            {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
-          </Button>
-        </motion.div>
+     
       </motion.div>
     </>
   )
