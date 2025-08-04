@@ -17,7 +17,7 @@ export function Navbar() {
   ]
 
   const handleLaunchCasino = () => {
-    window.open("https://casino-of-bonk.vercel.app", "_blank")
+    window.open("https://play.bonkbet.live/", "_blank")
   }
 
   return (
@@ -95,7 +95,7 @@ export function Navbar() {
               transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
             >
           <Button
-          onClick={() => window.open("https://www.google.com", "_blank")}
+          onClick={() => window.open("https://play.bonkbet.live/", "_blank")}
           className="rounded-full border-4 px-8 py-5 border-yellow-400 shadow-[0_0_16px_4px_rgba(253,224,71,0.7)] font-black text-white text-3xl font-bangers cursor-rocket bg-yellow-600 hover:bg-yellow-500 transition-all duration-300"
         >
           LAUNCH BONKBET!
