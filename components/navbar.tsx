@@ -22,12 +22,12 @@ export function Navbar() {
 
   return (
     <motion.nav
-      className=" scale-95 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 border-b-4 border-yellow-300 sticky top-0 z-50 neon-border"
+      className=" scale-95 bg-gradient-to-r from-yellow-700 via-yellow-500 to-yellow-400 border-b-4 border-yellow-700 sticky top-0 z-50 neon-border"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ type: "spring", stiffness: 100, damping: 20 }}
+      transition={{ type: "tween", stiffness: 100, damping: 20 }}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 py-1">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
@@ -40,8 +40,8 @@ export function Navbar() {
                 <Image
                        src="/images/BONKBET.png"
                   alt="Bonkbet"
-                  width={90}
-                  height={90}
+                  width={60}
+                  height={60}
                   className="group-hover:scale-110"
                 />
                 <motion.div
@@ -49,7 +49,7 @@ export function Navbar() {
                   animate={{ scale: [1, 1.5, 1] }}
                   transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}
                 >
-                  <Zap className="w-4 h-4 text-white" />
+              
                 </motion.div>
               </motion.div>
               <div className="flex flex-col">
@@ -94,13 +94,13 @@ export function Navbar() {
               animate={{ y: [0, -5, 0] }}
               transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
             >
-              <Button
-                onClick={handleLaunchCasino}
-                className="neon-button font-black text-white text-3xl font-bangers cursor-rocket"
-              >
-                🚀 LAUNCH BONKBET!
-              </Button>
-            </motion.div>
+          <Button
+          onClick={() => window.open("https://www.google.com", "_blank")}
+          className="rounded-full border-4 px-8 py-5 border-yellow-400 shadow-[0_0_16px_4px_rgba(253,224,71,0.7)] font-black text-white text-3xl font-bangers cursor-rocket bg-yellow-600 hover:bg-yellow-500 transition-all duration-300"
+        >
+          LAUNCH BONKBET!
+        </Button>
+                      </motion.div>
           </div>
 
           {/* Mobile menu button */}

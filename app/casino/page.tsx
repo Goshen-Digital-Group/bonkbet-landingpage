@@ -8,63 +8,63 @@ export default function CasinoPage() {
     {
       name: "Dice",
       description: "Bet on a roll from 0 to 100. Choose your odds. High risk, high reward.",
-      image: "/images/dice.png",
+      image: "/images/Games/dice.png",
       status: "Live",
       players: "24",
     },
     {
       name: "Mines",
       description: "Avoid the BONK bombs. Pick safe tiles and cash out before you explode!",
-      image: "/images/mines.png", // Using dice as placeholder
+     image: "/images/Games/mines.png", // Using dice as placeholder
     status: "Live",
       players: "20",
     },
     {
       name: "Crash",
       description: "Watch the multiplier rise. Cash out before it crashes. Timing is everything.",
-      image: "/images/crash.png",
+   image: "/images/Games/crash.png",
      status: "Live",
       players: "890",
     },
     {
       name: "Blackjack",
       description: "Classic 21 — beat the dealer and double your Bonk.",
-      image: "/images/blackjack.png",
+    image: "/images/Games/blackjack.png",
       status: "Live",
       players: "24",
     },
     {
       name: "Slots",
       description: "Spin the reels of Bonk, Retardio, Doge, and more. Meme chaos guaranteed.",
-      image: "/images/slots.png", // Using dice as placeholder
+    image: "/images/Games/slots.png", // Using dice as placeholder
     status: "Live",
       players: "14",
     },
     {
       name: "Coin Flip",
       description: "Heads or tails? Only real degens survive the 50/50.",
-      image: "/images/flip.png",
+     image: "/images/Games/flip.png",
       status: "Live",
       players: "31",
     },
     {
       name: "HiLo",
       description: "Predict higher or lower. Bonk your way through the deck.",
-      image: "/images/hilo.png",
+     image: "/images/Games/hilo.png",
     status: "Live",
       players: "37",
     },
     {
       name: "Roulette",
       description: "Red, black, or go all in on green. Spin the wheel of fate.",
-      image: "/images/roulette  .png", // Using dice as placeholder
+     image: "/images/Games/roulette.png", // Using dice as placeholder
     status: "Live",
       players: "41",
     },
     {
       name: "Plinko",
       description: "Drop the chip. Pray to the Bonk gods. Watch it bounce.",
-      image: "/images/plinko.png", // Using dice as placeholder
+     image: "/images/Games/plinko.png", // Using dice as placeholder
     status: "Live",
       players: "45",
     },

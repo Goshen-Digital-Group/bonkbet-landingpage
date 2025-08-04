@@ -17,64 +17,64 @@ export default function HomePage() {
   const games = [
     {
       name: "DICE",
-      description: "Roll the bones! 0-100 chaos! YOLO or go home! 🎲",
-      image: "/images/dice.png",
+      description: "Roll the bones! 0-100 chaos! YOLO or go home!",
+     image: "/Games/dice.png",
       status: "🔥 LIVE",
       link: "",
     },
     {
       name: "CRASH",
-      description: "TO THE MOON OR CRASH & BURN! Diamond hands only! 🚀",
-      image: "/images/crash.png",
+      description: "TO THE MOON OR CRASH & BURN! Diamond hands only!",
+     image: "/Games/crash.png",
       status: "🔥 LIVE",
       link: "",
     },
     {
       name: "BLACKJACK",
-      description: "21 or BUST! Beat the house like a true degen! 🃏",
-      image: "/images/blackjack.png",
+      description: "21 or BUST! Beat the house like a true degen!",
+    image: "/Games/blackjack.png",
       status: "🔥 LIVE",
       link: "",
     },
     {
       name: "FLIP",
       description: "Heads or tails? 50/50 PURE ADRENALINE! 🪙",
-      image: "/images/flip.png",
+   image: "/Games/flip.png",
       status: "🔥 LIVE",
       link: "",
     },
     {
       name: "HILO",
-      description: "Higher or lower? Predict like a fortune teller! 🔮",
-      image: "/images/hilo.png",
+      description: "Higher or lower? Predict like a fortune teller!",
+  image: "/Games/hilo.png",
       status: "🔥 LIVE",
       link: "",
     },
     {
       name: "MINES",
-      description: "Avoid the BONK bombs! Pick safe tiles and cash out! 💣",
-      image: "/images/mines.png",
+      description: "Avoid the BONK bombs! Pick safe tiles and cash out!",
+   image: "/Games/mines.png",
       status: "🔥 LIVE",
       link: "",
     },
     {
       name: "SLOTS",
-      description: "Spin the reels! Bonk, Retardio, Doge chaos! 🎰",
-      image: "/images/slots.png",
+      description: "Spin the reels! Bonk, Retardio, Doge chaos!",
+    image: "/Games/slots.png",
       status: "🔥 LIVE",
       link: "",
     },
     {
       name: "ROULETTE",
-      description: "Red, black, or go all in on green! Spin the wheel! 🎡",
-      image: "/images/roulette.png",
+      description: "Red, black, or go all in on green! Spin the wheel!",
+   image: "/Games/roulette.png",
       status: "🔥 LIVE",
       link: "",
     },
     {
       name: "PLINKO",
-      description: "Drop the chip! Pray to the Bonk gods! Watch it bounce! 🏀",
-      image: "/images/plinko.png",
+      description: "Drop the chip! Pray to the Bonk gods! Watch it bounce!",
+     image: "/Games/plinko.png",
       status: "🔥 LIVE",
       link: "",
     },
@@ -96,7 +96,7 @@ export default function HomePage() {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: "tween",
         stiffness: 100,
         damping: 12,
       },
@@ -112,9 +112,17 @@ export default function HomePage() {
       <AnimatedParticles />
       <BackgroundMusic />
 
-      {/* GOLDEN HERO SECTION */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/50 via-yellow-500/50 to-yellow-400/50"></div>
+   {/* GOLDEN HERO SECTION */}
+ <section
+  className="relative py-16 overflow-hidden min-h-[1000px]"
+  style={{
+    backgroundImage: "url('/images/BONKBET-bg-herosection.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Gradient overlay from bottom (dark yellow) to top (transparent) */}
+  <div className="absolute inset-0 bg-gradient-to-t from-yellow-700/90 via-yellow-500/60 to-yellow-200/0 pointer-events-none"></div>
 
         {/* Floating elements with Framer Motion */}
         <motion.div
@@ -185,7 +193,7 @@ export default function HomePage() {
           </motion.div>
 
                 <motion.h1
-              className="text-9xl font-black text-white mb-4 neon-text glitch font-bangers cursor-dice"
+              className="text-9xl font-black text-white mb-4 neon-text glitch tracking-wide font-bangers cursor-dice"
               data-text="BONKBET"
               variants={itemVariants}
               whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
@@ -194,16 +202,18 @@ export default function HomePage() {
             </motion.h1>
 
           <motion.div
-            className="text-4xl font-black text-white mb-2 font-bangers cursor-money"
+            className="text-4xl font-black text-white mb-2 tracking-wide font-bangers cursor-money leading-snug"
+            style={{ textShadow: "0 2px 16px #facc15, 0 1px 8px #000" }}
             variants={itemVariants}
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
           >
-          THE FIRST-EVER BONKBET CASINO ON SOLANA
+            THE FIRST-EVER BONKBET CASINO ON SOLANA
           </motion.div>
 
           <motion.div
-            className="text-2xl font-bold text-white mb-8 font-bangers cursor-rocket"
+            className="text-2xl font-bold text-white mb-8 tracking-wide font-bangers cursor-rocket"
+             style={{ textShadow: "0 2px 16px #facc15, 0 1px 4px #000" }}
             variants={itemVariants}
             animate={{ x: [0, -5, 5, 0] }}
             transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}
@@ -222,7 +232,7 @@ export default function HomePage() {
               <Button
                 onClick={handleLaunchCasino}
                 size="lg"
-                className="neon-button font-black text-2xl px-12 py-6 text-white font-bangers cursor-rocket"
+                className="neon-button font-black text-2xl px-12 py-6 text-white tracking-wide font-bangers cursor-rocket"
               >
                 🚀 LAUNCH BONKBET NOW! 🚀
               </Button>
@@ -255,8 +265,8 @@ export default function HomePage() {
                     >
                       {item.icon}
                     </motion.div>
-                    <h3 className="font-black text-black text-lg neon-text font-bangers">{item.title}</h3>
-                    <p className="text-black font-bold font-bangers">{item.desc}</p>
+                    <h3 className="font-black text-white text-4xl neon-text font-bangers">{item.title}</h3>
+                    <p className="text-white font-bold font-bangers">{item.desc}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -279,9 +289,10 @@ export default function HomePage() {
             <motion.h2
               className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-800 mb-8 glitch font-bangers cursor-dice"
               data-text="WHAT IS BONKBET OF BONK? "
+              
               initial={{ scale: 0, rotate: -180 }}
               whileInView={{ scale: 1, rotate: 0 }}
-              transition={{ type: "spring", stiffness: 100, damping: 15 }}
+              transition={{ type: "tween", stiffness: 100, damping: 15 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.05, rotate: [0, -2, 2, 0] }}
             >
@@ -289,20 +300,20 @@ export default function HomePage() {
             </motion.h2>
 
             <motion.div
-              className="bg-black/20 neon-border rounded-3xl p-8 mb-8 cursor-money"
+              className="bg-black/80 neon-border rounded-3xl p-8 mb-8 cursor-money"
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.3, type: "spring", stiffness: 80 }}
+              transition={{ delay: 0.3, type: "tween", stiffness: 80 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.02, rotate: [0, -0.5, 0.5, 0] }}
             >
               <p className="text-2xl text-white leading-relaxed font-bold font-bangers">
                 🎰 Casino of Bonk (COB) is a <span className="text-white neon-text">DECENTRALIZED</span>,
                 <span className="text-white neon-text"> COMMUNITY-DRIVEN</span> casino built on BONKBET —
-                Solana's <span className="text-white neon-text">MEME-POWERED</span> movement! 🚀
+                Solana's <span className="text-white neon-text">MEME-POWERED</span> movement! 
               </p>
               <motion.p
-                className="text-xl text-white mt-4 font-bold font-bangers"
+                className="text-5xl text-white mt-4 font-bold font-bangers"
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
               >
@@ -313,8 +324,9 @@ export default function HomePage() {
             <motion.div
               className="text-3xl font-black text-white neon-text font-bangers cursor-rocket"
               initial={{ x: -200, opacity: 0 }}
+              style={{ textShadow: "0 2px 16px #facc15, 0 1px 8px #000" }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.6, type: "spring", stiffness: 100 }}
+              transition={{ delay: 0.6, type: "tween", stiffness: 100 }}
               viewport={{ once: true }}
               animate={{ x: [0, -5, 5, 0] }}
               whileHover={{ scale: 1.1, rotate: [0, -1, 1, 0] }}
@@ -327,31 +339,39 @@ export default function HomePage() {
 
       {/* WHY THIS IS UNIQUE */}
       <motion.section
-        className="py-20 bg-gradient-to-r from-white via-yellow-100 to-yellow-300 relative"
+        className="py-20 bg-gradient-to-r from-yellow-800 via-yellow-100 to-yellow-300 relative"
+                style={{
+          backgroundImage: "url('/images/bonkbet-bg-unique-02.svg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
+        
       >
         <div className="absolute inset-0 retro-grid opacity-20"></div>
-        <div className="relative container mx-auto px-4">
+        <div className="relative container mx-auto px-4 text-white">
           <motion.h2
-            className="text-6xl font-black text-center text-transparent text-[#d69a08] mb-12 font-bangers cursor-dice"
+            className="text-6xl font-black text-center mb-12 font-bangers cursor-dice"
+            style={{ textShadow: "0 2px 16px #facc15, 0 1px 8px #000" }}
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 100, damping: 15 }}
+            transition={{ type: "tween", stiffness: 100, damping: 15 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
           >
-            💡 WHY BONKBET IS UNIQUE 💡
+             WHY BONKBET IS UNIQUE
           </motion.h2>
 
           <motion.div
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto"
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl py-10 mx-auto"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            
           >
             {[
               {
@@ -391,12 +411,24 @@ export default function HomePage() {
                       <motion.div
                         className="flex justify-center mb-4 text-white"
                         animate={{ scale: [1, 1.1, 1] }}
+                            style={{ textShadow: "0 2px 16px #facc15, 0 1px 8px #000" }}
                         transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
                       >
                         {feature.icon}
                       </motion.div>
-                      <h3 className="text-xl font-black text-white mb-4 neon-text font-bangers">{feature.title}</h3>
-                      <p className="text-white font-bold font-bangers">{feature.desc}</p>
+                      
+                <h3
+                  className="text-4xl font-black text-white mb-4 tracking-normal neon-text font-bangers"
+                  style={{ textShadow: "0 2px 12px #facc15, 0 1px 4px #000" }}
+                >
+                  {feature.title}
+                </h3>
+                <p
+                  className="text-white font-bold font-bangers"
+                  style={{ textShadow: "0 2px 8px #facc15, 0 1px 2px #000" }}
+                >
+                  {feature.desc}
+                </p>
                     </div>
                   </CardContent>
                 </Card>
@@ -413,29 +445,32 @@ export default function HomePage() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
+  
+        
       >
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width=60 height=60 viewBox=0 0 60 60 xmlns=http://www.w3.org/2000/svg%3E%3Cg fill=none fillRule=evenodd%3E%3Cg fill=%23ffd700 fillOpacity=0.1%3E%3Ccircle cx=30 cy=30 r=4/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] animate-pulse"></div>
         </div>
 
         <div className="relative container mx-auto px-4">
-          <motion.h2
-            className="text-7xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-600  from-yellow-200 to-yellow-400 mb-6 font-bangers cursor-dice"
-            initial={{ y: -100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 100, damping: 15 }}
-            viewport={{ once: true }}
-            animate={{ y: [0, -10, 0] }}
-            whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
-          >
-            🕹️ BONKBET GAMES ARE LIVE! 🕹️
-          </motion.h2>
+      <motion.h2
+          className="text-7xl font-black text-center text-white mb-6 font-bangers tracking-wide cursor-dice"
+          style={{ textShadow: "0 2px 16px #facc15, 0 1px 8px #000" }}
+          initial={{ y: -100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ type: "tween", stiffness: 100, damping: 15 }}
+          viewport={{ once: true }}
+          animate={{ y: [0, -10, 0] }}
+          whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
+        >
+          BONKBET GAMES ARE LIVE!
+        </motion.h2>
 
           <motion.p
             className="text-center text-white mb-12 text-2xl font-bold neon-text font-bangers cursor-money"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
-            transition={{ delay: 0.3, type: "spring", stiffness: 100 }}
+            transition={{ delay: 0.3, type: "tween", stiffness: 100 }}
             viewport={{ once: true }}
           >
             ⚡ ALL GAMES ARE LIVE! FAST PLAY! PROVABLE FAIRNESS! MEME-INSPIRED CHAOS! ⚡
@@ -466,7 +501,7 @@ export default function HomePage() {
                       animate={{ scale: [1, 1.1, 1] }}
                       transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
                     >
-                      <Badge className="absolute top-4 right-4 bg-black text-yellow-400 text-2xl font-black font-bangers">
+                      <Badge className="absolute top-2 right-2 bg-yellow-900 text-yellow-400 text-1xl font-black font-bangers">
                         {game.status}
                       </Badge>
                     </motion.div>
@@ -487,22 +522,17 @@ export default function HomePage() {
                       </motion.div>
                     </div>
 
-                    <motion.h3
-                      className="text-5xl font-black text-white leading-tight tracking-widest mb-4 neon-text font-bangers"
-                      whileHover={{ scale: 1.1, rotate: [0, -1, 1, 0] }}
-                    >
-                      {game.name}
-                    </motion.h3>
+                  
 
-                    <p className="text-white font-bold text-1xl mb-6 font-bangers">{game.description}</p>
+                    <p className="text-white font-bold text-2xl mb-6 tracking-widest font-bangers">{game.description}</p>
 
                     <motion.div whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }} whileTap={{ scale: 0.95 }}>
                       <Button
-                        className="neon-button font-black text-white w-full text-lg font-bangers cursor-rocket mb-2 rounded-lg"
-                        onClick={() => window.open(game.link, "_blank")}
-                      >
-                        🎮 PLAY BONKBET NOW! 🎮
-                      </Button>
+                    className="neon-button font-black text-2xl text-white px-6 py-6 font-bangers cursor-rocket mb-2 rounded-xl mx-auto"
+                    onClick={() => window.open(game.link, "_blank")}
+                  >
+                    🎮 PLAY BONKBET 🎮
+                  </Button>
                     </motion.div>
                   </CardContent>
                 </Card>
@@ -526,7 +556,7 @@ export default function HomePage() {
             className="text-6xl font-black text-center text-white mb-12 font-bangers cursor-dice"
             initial={{ scale: 0, rotate: -180 }}
             whileInView={{ scale: 1, rotate: 0 }}
-            transition={{ type: "spring", stiffness: 100, damping: 15 }}
+            transition={{ type: "tween", stiffness: 100, damping: 15 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
           >
@@ -541,24 +571,24 @@ export default function HomePage() {
             viewport={{ once: true }}
           >
             {[
-              {
-                icon: <FileText className="w-8 h-8 w text-white text-1xl" />,
-                title: "HOW TO PLAY",
-                desc: "Complete guide to all casino games, rules, and strategies for maximum wins!",
-                link: "/docs/how-to-play",
-              },
-              {
-                icon: <Zap className="w-8 h-8 text-white text-1xl" />,
-                title: "GETTING STARTED",
-                desc: "Step-by-step tutorial to connect wallet, deposit, and start playing instantly!",
-                link: "/docs/getting-started",
-              },
-              {
-                icon: <Target className="w-8 h-8 text-white text-1xl" />,
-                title: "PROVABLY FAIR",
-                desc: "Learn how our cryptographic system ensures every game is 100% fair and verifiable!",
-                link: "/docs/provably-fair",
-              },
+           {
+            icon: <FileText className="w-20 h-20 text-yellow-800" />,
+            title: "HOW TO PLAY",
+            desc: "Complete guide to all casino games, rules, and strategies for maximum wins!",
+            link: "/docs/how-to-play",
+          },
+          {
+            icon: <Zap className="w-20 h-20 text-yellow-800" />,
+            title: "GETTING STARTED",
+            desc: "Step-by-step tutorial to connect wallet, deposit, and start playing instantly!",
+            link: "/docs/getting-started",
+          },
+          {
+            icon: <Target className="w-20 h-20 text-yellow-800" />,
+            title: "PROVABLY FAIR",
+            desc: "Learn how our cryptographic system ensures every game is 100% fair and verifiable!",
+            link: "/docs/provably-fair",
+          },
             ].map((doc, index) => (
               <motion.div
                 key={index}
@@ -570,29 +600,40 @@ export default function HomePage() {
                 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Card className="bg-gradient-to-br from-white to-yellow-200 neon-border transition-all duration-500 cursor-dice h-full">
-                  <CardContent className="p-6 text-center h-full flex flex-col justify-between">
-                    <div>
-                      <motion.div
-                        className="flex justify-center mb-4 text-yellow-700"
-                        animate={{ scale: [1, 1.1, 1] }}
-                        transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
-                      >
-                        {doc.icon}
-                      </motion.div>
-                      <h3 className="text-xl font-black text-black mb-4 neon-text font-bangers">{doc.title}</h3>
-                      <p className="text-black font-bold font-bangers mb-6">{doc.desc}</p>
-                    </div>
-                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                      <Button
-                        className="neon-button font-black text-black w-full font-bangers cursor-rocket"
-                        onClick={() => window.open(doc.link, "_blank")}
-                      >
-                        📖 READ MORE
-                      </Button>
-                    </motion.div>
-                  </CardContent>
-                </Card>
+               <Card className="bg-gradient-to-br from-white to-yellow-200 neon-border transition-all duration-500 cursor-dice h-full">
+  <CardContent className="p-6 text-center h-full flex flex-col justify-between">
+    <div>
+      <motion.div
+        className="flex justify-center mb-4 text-yellow-700"
+        style={{ fontSize: "4rem", textShadow: "0 2px 16px #facc15, 0 1px 8px #000" }}
+        animate={{ scale: [1, 1.1, 1] }}
+        transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
+      >
+        {doc.icon}
+      </motion.div>
+      <h3
+        className="text-3xl font-black text-white mb-3 font-bangers"
+        style={{ textShadow: "0 2px 12px #facc15, 0 1px 4px #000" }}
+      >
+        {doc.title}
+      </h3>
+      <p
+        className="text-lg text-white font-bold font-bangers mb-6"
+        style={{ textShadow: "0 2px 8px #facc15, 0 1px 2px #000" }}
+      >
+        {doc.desc}
+      </p>
+    </div>
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+      <Button
+        className="neon-button font-black text-white px-10 text-2xl w-full font-bangers cursor-rocket"
+        onClick={() => window.open(doc.link, "_blank")}
+      >
+        📖 READ MORE
+      </Button>
+    </motion.div>
+  </CardContent>
+</Card>
               </motion.div>
             ))}
           </motion.div>
@@ -612,103 +653,98 @@ export default function HomePage() {
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <motion.h2
-              className="text-7xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-400 mb-12 glitch font-bangers cursor-money"
+              className="text-7xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-800 mb-12 glitch font-bangers cursor-money"
               data-text="💎 TOKENOMICS DETAILS💎"
               initial={{ scale: 0, rotate: 180 }}
               whileInView={{ scale: 1, rotate: 0 }}
-              transition={{ type: "spring", stiffness: 80, damping: 15 }}
+              transition={{ type: "tween", stiffness: 80, damping: 15 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
             >
-            💎 TOKENOMICS DETAILS💎
+            TOKENOMICS DETAILS
             </motion.h2>
 
             <div className="grid md:grid-cols-2 gap-8">
               <motion.div
                 initial={{ x: -200, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ type: "spring", stiffness: 80, damping: 15 }}
+                transition={{ type: "tween", stiffness: 80, damping: 15 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02, rotate: [0, -0.5, 0.5, 0] }}
               >
-                <Card className="bg-gradient-to-br from-yellow-500 to-yellow-700 neon-border cursor-dice">
-                  <CardContent className="p-8">
-                    <motion.h3
-                      className="text-3xl font-black text-white mb-6 neon-text font-bangers"
-                      animate={{ scale: [1, 1.05, 1] }}
-                      transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-                    >
-                      🔥 TOKEN DETAILS 🔥
-                    </motion.h3>
+               <Card className="bg-gradient-to-br from-yellow-500 to-yellow-700 neon-border cursor-dice">
+  <CardContent className="p-8">
+    <motion.h3
+      className="text-3xl font-black text-white mb-6 neon-text font-bangers"
+      animate={{ scale: [1, 1.05, 1] }}
+      transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
+    >
+      🔥 TOKEN DETAILS 🔥
+    </motion.h3>
 
-                    <div className="space-y-4 text-[#b88406] font-bold font-bangers">
-                      {[
-                        { label: "SYMBOL:", value: "$BOK", badge: "bg-white text-white" },
-                        { label: "NETWORK:", value: "SOLANA ", badge: "bg-yellow-300 text-white" },
-                        { label: "SUPPLY:", value: "1,000,000,000 COB", badge: null },
-                        { label: "TAX:", value: "0/0 FAIR! 🚀", badge: "bg-white text-white" },
-                      ].map((item, index) => (
-                        <motion.div
-                          key={index}
-                          className="flex justify-between items-center"
-                          initial={{ opacity: 0, x: -50 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ delay: index * 0.1 }}
-                          viewport={{ once: true }}
-                          whileHover={{ scale: 1.05, x: 10 }}
-                        >
-                          <span>{item.label}</span>
-                          {item.badge ? (
-                            <Badge className={`${item.badge} font-black text-lg font-bangers`}>{item.value}</Badge>
-                          ) : (
-                            <span className="text-yellow-200 neon-text">{item.value}</span>
-                          )}
-                        </motion.div>
-                      ))}
-                    </div>
+    <div className="space-y-4 text-white text-lg font-bold font-bangers">
+      {[
+        { label: "SYMBOL:", value: "$BOK", badge: "text-white" },
+        { label: "NETWORK:", value: "SOLANA ", badge: " text-white" },
+        { label: "SUPPLY:", value: "1,000,000,000 COB", badge: "text-lg" },
+        { label: "TAX:", value: "0/0 FAIR! 🚀", badge: "text-white" },
+      ].map((item, index) => (
+         <motion.div
+    key={index}
+    className="flex justify-between items-center"
+    initial={{ opacity: 0, x: -50 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ delay: index * 0.1 }}
+    viewport={{ once: true }}
+  >
+    <span className="text-2xl text-white font-bold font-bangers">{item.label}</span>
+    {item.badge ? (
+      <Badge className={`${item.badge} font-black text-2xl font-bangers`}>{item.value}</Badge>
+    ) : (
+      <span className="text-2xl text-yellow-200 neon-text font-bangers">{item.value}</span>
+    )}
+  </motion.div>
+      ))}
+    </div>
 
-                    <motion.div
-                      className="mt-6 p-4 bg-black/50 rounded-lg neon-border cursor-money"
-                      whileHover={{ scale: 1.02 }}
-                    >
-                      <p className="text-md text-yellow-200 mb-2 font-bold font-bangers">CONTRACT ADDRESS:</p>
-                      <div className="flex items-center gap-2 text-xs font-mono text-white bg-gray-900 p-2 rounded">
-                        <span className="flex-1 truncate">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
-                        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                          <Button size="sm" className="neon-button p-1 cursor-rocket">
-                            <Copy className="w-10 h-10" />
-                          </Button>
-                        </motion.div>
-                      </div>
-                    </motion.div>
-                  </CardContent>
-                </Card>
+    <div className="mt-6 p-4 bg-black/50 rounded-lg neon-border cursor-money">
+      <p className="text-lg text-yellow-200 mb-2 font-bold font-bangers">CONTRACT ADDRESS:</p>
+      <div className="flex items-center gap-2 text-xs font-mono text-white bg-yellow-900 p-2 rounded">
+        <span className="flex-1 truncate">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
+        <Button size="sm" className="neon-button p-1 cursor-rocket">
+          <Copy className="w-10 h-10" />
+        </Button>
+      </div>
+    </div>
+  </CardContent>
+</Card>
+
               </motion.div>
 
               <motion.div
                 initial={{ x: 200, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ type: "spring", stiffness: 80, damping: 15 }}
+                transition={{ type: "tween", stiffness: 80, damping: 15 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02, rotate: [0, 0.5, -0.5, 0] }}
               >
                 <Card className="bg-gradient-to-br from-yellow-400 to-yellow-600 neon-border cursor-money">
                   <CardContent className="p-8">
                     <motion.h3
-                      className="text-3xl font-black text-white mb-6 neon-text font-bangers"
+                      className="text-3xl font-black text-white mb-6 text-center neon-text font-bangers"
                       animate={{ scale: [1, 1.05, 1] }}
                       transition={{ duration: 2.5, repeat: Number.POSITIVE_INFINITY }}
                     >
                       ⚡ UTILITY POWER! ⚡
                     </motion.h3>
 
-                    <div className="space-y-4 text-white text-2xl font-bold font-bangers">
+                    <div className="space-y-4 text-white text-2xl  text-center font-bold font-bangers">
                       {[
-                        { icon: "🪙", text: "PLAY GAMES WITH $COB!" },
+                        { icon: "🎮", text: "PLAY GAMES WITH $KOB!" },
                         { icon: "🎁", text: "EARN CASINO PROFITS!" },
                         { icon: "🗳️", text: "VOTE ON EVERYTHING!" },
                         { icon: "🎟️", text: "NFT PERKS ACCESS!" },
-                        { icon: "💎", text: "STAKE FOR MORE $COB!" },
+                        { icon: "💎", text: "STAKE FOR MORE $KOB!" },
                       ].map((item, index) => (
                         <motion.div
                           key={index}
@@ -726,7 +762,7 @@ export default function HomePage() {
                           >
                             {item.icon}
                           </motion.span>
-                          <span className="hover:neon-text">{item.text}</span>
+                          <span className="hover:neon-text text-center">{item.text}</span>
                         </motion.div>
                       ))}
                     </div>
@@ -756,7 +792,7 @@ export default function HomePage() {
             data-text="READY TO JOIN THE BONK REVOLUTION?!"
             initial={{ scale: 0, rotate: -180 }}
             whileInView={{ scale: 1, rotate: 0 }}
-            transition={{ type: "spring", stiffness: 60, damping: 15 }}
+            transition={{ type: "tween", stiffness: 60, damping: 15 }}
             viewport={{ once: true }}
             animate={{ x: [0, -5, 5, 0] }}
             whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
@@ -768,7 +804,7 @@ export default function HomePage() {
             className="text-3xl font-black text-white mb-12 font-bangers cursor-dice"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, type: "spring", stiffness: 80 }}
+            transition={{ delay: 0.3, type: "tween", stiffness: 80 }}
             viewport={{ once: true }}
             animate={{ scale: [1, 1.05, 1] }}
           >
@@ -813,7 +849,7 @@ export default function HomePage() {
             className="mt-12 text-6xl"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
-            transition={{ delay: 0.8, type: "spring", stiffness: 100 }}
+            transition={{ delay: 0.8, type: "tween", stiffness: 100 }}
             viewport={{ once: true }}
           >
             {["🎰", "💎", "🚀", "⭐", "🔥"].map((emoji, index) => (
