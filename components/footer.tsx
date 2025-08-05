@@ -39,7 +39,7 @@ export function Footer() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="block text-white hover:text-yellow-200 transition-all duration-300 font-bold font-bangers text-lg"
+                  className="block text-white hover:text-yellow-200   tracking-wider transition-all duration-300 font-bold font-bangers text-3xl"
                 >
                   {link.name}
                 </Link>
