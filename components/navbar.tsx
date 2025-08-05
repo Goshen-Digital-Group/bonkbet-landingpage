@@ -12,8 +12,7 @@ export function Navbar() {
 
   const navItems = [
     { name: "HOME", href: "/" },
-    { name: "CASINO", href: "/casino" },
-    { name: "DOCS", href: "https://pump.fun" },
+    { name: "DOCS", href: "https://docs.bonkbet.live/" },
   ]
 
   const handleLaunchCasino = () => {
@@ -98,7 +97,7 @@ export function Navbar() {
           onClick={() => window.open("https://play.bonkbet.live/", "_blank")}
           className="rounded-full border-4 px-8 py-5 border-yellow-400 shadow-[0_0_16px_4px_rgba(253,224,71,0.7)] font-black text-white text-3xl font-bangers cursor-rocket bg-yellow-600 hover:bg-yellow-500 transition-all duration-300"
         >
-          LAUNCH BONKBET!
+          LAUNCH APP!
         </Button>
                       </motion.div>
           </div>
@@ -152,7 +151,7 @@ export function Navbar() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Button onClick={handleLaunchCasino} className="neon-button font-black text-1xl  text-black font-bangers">
-                    🚀 LAUNCH BONKBET!
+                    🚀 LAUNCH APP!
                   </Button>
                 </motion.div>
               </div>
