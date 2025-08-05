@@ -265,7 +265,7 @@ export default function HomePage() {
                     >
                       {item.icon}
                     </motion.div>
-                    <h3 className="font-black text-white text-4xl neon-text font-bangers">{item.title}</h3>
+                    <h3 className="font-black text-white text-4xl font-bangers">{item.title}</h3>
                     <p className="text-white font-bold font-bangers">{item.desc}</p>
                   </CardContent>
                 </Card>
@@ -287,7 +287,7 @@ export default function HomePage() {
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <motion.h2
-              className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-800 mb-8 glitch font-bangers cursor-dice"
+              className="text-6xl font-black text-white mb-8 font-bangers cursor-dice"
               data-text="WHAT IS BONKBET OF BONK? "
               
               initial={{ scale: 0, rotate: -180 }}
@@ -307,10 +307,10 @@ export default function HomePage() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.02, rotate: [0, -0.5, 0.5, 0] }}
             >
-              <p className="text-2xl text-white leading-relaxed font-bold font-bangers">
-                🎰 BonkBet (BB) is a <span className="text-white neon-text">DECENTRALIZED</span>,
-                <span className="text-white neon-text"> COMMUNITY-DRIVEN</span> casino built on BONKBET —
-                Solana's <span className="text-white neon-text">MEME-POWERED</span> movement! 
+              <p className="text-3xl text-white leading-relaxed font-bold font-bangers tracking-wider">
+                🎰 BonkBet (BB) is a <span className="text-white font-extrabold">DECENTRALIZED</span>,
+                <span className="text-white "> COMMUNITY-DRIVEN</span> casino built on BONKBET —
+                Solana's <span className="text-white">MEME-POWERED</span> movement! 
               </p>
               <motion.p
                 className="text-5xl text-white mt-4 font-bold font-bangers"
