@@ -32,9 +32,9 @@ export function Footer() {
             <div className="space-y-3">
               {[
                 { name: "🎰 BONKBET Games", href: "/casino" },
-                { name: "💎 $KOB   Token", href: "/token" },
+                { name: "💎 $BB   Token", href: "/token" },
                 { name: "🖼️ NFT Collection", href: "/nfts" },
-                { name: "📚 Documentation", href: "/docs" },
+                { name: "📚 Documentation", href: "https://docs.bonkbet.live/" },
               ].map((link) => (
                 <Link
                   key={link.name}
@@ -74,7 +74,7 @@ export function Footer() {
             <h3 className="font-black text-3xl mb-6 text-white font-bangers">🚀 GET STARTED</h3>
             <div className="space-y-4">
               <Button className="w-full bg-yellow-600 hover:bg-yellow-700 font-black text-white hover:scale-105 font-bangers text-lg">
-                🎰 LAUNCH BONKBET!
+                🎰 LAUNCH APP!
               </Button>
               <Button className="w-full bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-white font-black border-2 border-yellow-400 font-bangers text-lg">
                 💰 BUY
@@ -85,7 +85,7 @@ export function Footer() {
 
         <div className="border-t-2 border-yellow-400 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white text-base font-bold font-bangers">
-            © 2025 Casino of BONKBET. All rights reserved. 🎰
+            © 2025 BONKBET. All rights reserved. 🎰
           </p>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
             <span className="text-white text-base font-bold font-bangers">

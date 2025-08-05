@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "BonkBet - The First-Ever Let'sBonk Casino on Solana",
     description:
       "Degens play here. Bonk is the house. A decentralized, community-driven casino built on Solana with meme coin energy and provably fair games.",
-    url: "https://yourdomain.com",
+    url: "https://bonkbet.live",
     siteName: "BonkBet",
     images: [
       {
