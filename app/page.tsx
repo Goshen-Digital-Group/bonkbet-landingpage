@@ -688,9 +688,9 @@ export default function HomePage() {
 
                     <div className="space-y-4 text-white text-3xl tracking-wide font-bold font-bangers">
                       {[
-                        { label: "SYMBOL:", value: "$BOK", badge: "text-3xl text-white" },
+                        { label: "SYMBOL:", value: "$BB", badge: "text-3xl text-white" },
                         { label: "NETWORK:", value: "SOLANA ", badge: " text-white" },
-                        { label: "SUPPLY:", value: "1,000,000,000 COB", badge: "text-3xl text-white" },
+                        { label: "SUPPLY:", value: "1,000,000,000 $BB", badge: "text-3xl text-white" },
                         { label: "TAX:", value: "0/0 FAIR! 🚀", badge: " text-white" },
                       ].map((item, index) => (
                         <motion.div
@@ -750,11 +750,9 @@ export default function HomePage() {
 
                           <div className="space-y-4 text-white text-3xl mb-10 wide justify-center font-bold font-bangers text-center">
                             {[
-                              { icon: "🎮", text: "PLAY GAMES WITH $KOB!" },
-                              { icon: "🎁", text: "EARN CASINO PROFITS!" },
+                              { icon: "🎮", text: "PLAY GAMES WITH $BB!" },
                               { icon: "🗳️", text: "VOTE ON EVERYTHING!" },
                               { icon: "🎟️", text: "NFT PERKS ACCESS!" },
-                              { icon: "💎", text: "STAKE FOR MORE $KOB!" },
                             ].map((item, index) => (
                               <motion.div
                                 key={index}
