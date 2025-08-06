@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Twitter, MessageCircle, Github } from "lucide-react"
 
+
 export function Footer() {
   return (
     <footer className="bg-gradient-to-r from-black via-yellow-900 to-black border-t-4 border-yellow-400 ">
@@ -14,16 +15,15 @@ export function Footer() {
               <Image
                 src="/images/BONKBET.png"
                 alt="BONKBET"
-                width={50}
-                height={50}
+                width={200}
+                height={200}
                 className="spin-slow hover:scale-110"
               />
 
             </div>
-            <p className="text-white text-base font-bold font-bangers">
-              🎰 The first-ever Bonkbet Casino on Solana. Built for players. Owned by the community. Fueled by BONKBET.
-              🚀
-            </p>
+   <p className="text-white text-1xl tracking-wider font-bold  font-bangers">
+  🎰 The first-ever Bonkbet Casino on Solana. Built for players. Owned by the community. Fueled by BONKBET. 🚀
+</p>
           </div>
 
           {/* Quick Links */}
@@ -39,7 +39,7 @@ export function Footer() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="block text-white hover:text-yellow-200 transition-all duration-300 font-bold font-bangers text-lg"
+                  className="block text-white hover:text-yellow-200   tracking-wider transition-all duration-300 font-bold font-bangers text-3xl"
                 >
                   {link.name}
                 </Link>
@@ -50,35 +50,50 @@ export function Footer() {
           {/* Community */}
           <div>
             <h3 className="font-black text-3xl mb-6 text-white font-bangers">👥 COMMUNITY</h3>
-            <div className="space-y-3">
-              {[
-                { icon: <Twitter className="w-5 h-5" />, name: "Twitter/X", href: "#" },
-                { icon: <MessageCircle className="w-5 h-5" />, name: "Telegram", href: "#" },
-                { icon: <MessageCircle className="w-5 h-5" />, name: "Discord", href: "#" },
-                { icon: <Github className="w-5 h-5" />, name: "GitHub", href: "#" },
-              ].map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  className="flex items-center gap-3 text-white hover:text-yellow-200 transition-all duration-300 font-bold font-bangers text-lg"
-                >
-                  {social.icon}
-                  {social.name}
-                </a>
-              ))}
-            </div>
+          <div className="space-y-3">
+                {[
+                  { icon: <Twitter className="w-5 h-5" />, name: "Twitter/X", href: "#" },
+                  { icon: <MessageCircle className="w-5 h-5" />, name: "Telegram", href: "#" },
+                  { icon: <MessageCircle className="w-5 h-5" />, name: "Discord", href: "#" },
+                  { icon: <Github className="w-5 h-5" />, name: "GitHub", href: "#" },
+                ].map((social) => (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    className="flex items-center gap-3 tracking-wider text-white hover:text-yellow-200 transition-all duration-300 font-bold font-bangers"
+                    style={{ fontSize: "1.7rem" }} // Change this value to adjust text size
+                  >
+                    {social.icon}
+                    {social.name}
+                  </a>
+                ))}
+</div>
           </div>
 
           {/* Actions */}
           <div>
-            <h3 className="font-black text-3xl mb-6 text-white font-bangers">🚀 GET STARTED</h3>
+            <h3 className="font-black text-4xl mb-6 text-center text-white font-bangers">🚀 GET STARTED</h3>
             <div className="space-y-4">
-              <Button className="w-full bg-yellow-600 hover:bg-yellow-700 font-black text-white hover:scale-105 font-bangers text-lg">
-                🎰 LAUNCH APP!
-              </Button>
-              <Button className="w-full bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-white font-black border-2 border-yellow-400 font-bangers text-lg">
-                💰 BUY
-              </Button>
+         <a
+          href="https://play.bonkbet.live/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full inline-block"
+        >
+          <Button className="w-full rounded-full bg-yellow-600 hover:bg-yellow-700 font-black text-white hover:scale-105  font-bangers text-3xl ">
+            🎰 LAUNCH APP!
+          </Button>
+        </a>
+        <a
+          href="https://buy.bonkbet.live/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full inline-block"
+        >
+        <Button className="max-w-lg w-full rounded-full bg-gradient-to-r from-yellow-600 to-yellow-400 hover:from-yellow-700 hover:to-yellow-500 text-white font-black border-2 border-yellow-400 font-bangers text-3xl ">
+        💰 BUY
+      </Button>
+        </a>
             </div>
           </div>
         </div>

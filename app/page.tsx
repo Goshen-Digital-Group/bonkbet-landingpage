@@ -8,6 +8,7 @@ import Image from "next/image"
 import { AnimatedParticles } from "@/components/animated-particles"
 import { BackgroundMusic } from "@/components/background-music"
 import { motion, useScroll, useTransform } from "framer-motion"
+import { useState } from "react"
 
 export default function HomePage() {
   const { scrollY } = useScroll()
@@ -105,6 +106,16 @@ export default function HomePage() {
 
   const handleLaunchCasino = () => {
     window.open("", "_blank")
+  }
+
+  // Add state for copy notification
+  const [copied, setCopied] = useState(false)
+  const contractAddress = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" // Replace with your real address
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(contractAddress)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 1500)
   }
 
   return (
@@ -265,7 +276,7 @@ export default function HomePage() {
                     >
                       {item.icon}
                     </motion.div>
-                    <h3 className="font-black text-white text-4xl neon-text font-bangers">{item.title}</h3>
+                    <h3 className="font-black text-white text-4xl font-bangers">{item.title}</h3>
                     <p className="text-white font-bold font-bangers">{item.desc}</p>
                   </CardContent>
                 </Card>
@@ -287,7 +298,7 @@ export default function HomePage() {
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <motion.h2
-              className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-800 mb-8 glitch font-bangers cursor-dice"
+              className="text-6xl font-black text-white mb-8 font-bangers cursor-dice"
               data-text="WHAT IS BONKBET OF BONK? "
               
               initial={{ scale: 0, rotate: -180 }}
@@ -307,10 +318,10 @@ export default function HomePage() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.02, rotate: [0, -0.5, 0.5, 0] }}
             >
-              <p className="text-2xl text-white leading-relaxed font-bold font-bangers">
-                🎰 BonkBet (BB) is a <span className="text-white neon-text">DECENTRALIZED</span>,
-                <span className="text-white neon-text"> COMMUNITY-DRIVEN</span> casino built on BONKBET —
-                Solana's <span className="text-white neon-text">MEME-POWERED</span> movement! 
+              <p className="text-3xl text-white leading-relaxed font-bold font-bangers tracking-wider">
+                🎰 BonkBet (BB) is a <span className="text-white font-extrabold">DECENTRALIZED</span>,
+                <span className="text-white "> COMMUNITY-DRIVEN</span> casino built on BONKBET —
+                Solana's <span className="text-white">MEME-POWERED</span> movement! 
               </p>
               <motion.p
                 className="text-5xl text-white mt-4 font-bold font-bangers"
@@ -354,7 +365,7 @@ export default function HomePage() {
         <div className="absolute inset-0 retro-grid opacity-20"></div>
         <div className="relative container mx-auto px-4 text-white">
           <motion.h2
-            className="text-6xl font-black text-center mb-12 font-bangers cursor-dice"
+            className="text-6xl font-black tracking-wider text-center mb-12 font-bangers cursor-dice"
             style={{ textShadow: "0 2px 16px #facc15, 0 1px 8px #000" }}
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -375,7 +386,7 @@ export default function HomePage() {
           >
             {[
               {
-                icon: <Lightbulb className="w-8 h-8 text-white" />,
+                icon: <Lightbulb className="w-8 h-8 text-white " />,
                 title: "FIRST MEME CASINO",
                 desc: "The world's first casino built specifically for the meme coin community on Solana!",
               },
@@ -406,7 +417,7 @@ export default function HomePage() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Card className="bg-gradient-to-br from-yellow-300 to-yellow-500 neon-border transition-all duration-500 cursor-dice h-full">
-                  <CardContent className="p-6 text-center h-full flex flex-col justify-between">
+                  <CardContent className="p-6 text-center h-full flex flex-col pt-20 ">
                     <div>
                       <motion.div
                         className="flex justify-center mb-4 text-white"
@@ -418,13 +429,13 @@ export default function HomePage() {
                       </motion.div>
                       
                 <h3
-                  className="text-4xl font-black text-white mb-4 tracking-normal neon-text font-bangers"
+                  className="text-4xl font-black text-white mb-4 tracking-wider font-bangers"
                   style={{ textShadow: "0 2px 12px #facc15, 0 1px 4px #000" }}
                 >
                   {feature.title}
                 </h3>
                 <p
-                  className="text-white font-bold font-bangers"
+                  className="text-white text-2xl tracking-wider p-10 font-bold font-bangers"
                   style={{ textShadow: "0 2px 8px #facc15, 0 1px 2px #000" }}
                 >
                   {feature.desc}
@@ -467,7 +478,7 @@ export default function HomePage() {
         </motion.h2>
 
           <motion.p
-            className="text-center text-white mb-12 text-2xl font-bold neon-text font-bangers cursor-money"
+            className="text-center text-yellow-800 mb-12 text-4xl font-bold tracking-wider  font-bangers cursor-money"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ delay: 0.3, type: "tween", stiffness: 100 }}
@@ -553,7 +564,7 @@ export default function HomePage() {
         <div className="absolute inset-0 retro-grid opacity-30"></div>
         <div className="relative container mx-auto px-4">
           <motion.h2
-            className="text-6xl font-black text-center text-white mb-12 font-bangers cursor-dice"
+            className="text-6xl font-black text-center tracking-wider text-white mb-12 font-bangers cursor-dice"
             initial={{ scale: 0, rotate: -180 }}
             whileInView={{ scale: 1, rotate: 0 }}
             transition={{ type: "tween", stiffness: 100, damping: 15 }}
@@ -564,7 +575,7 @@ export default function HomePage() {
            </motion.h2>
 
           <motion.div
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+            className="grid md:grid-cols-2   lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -600,7 +611,7 @@ export default function HomePage() {
                 }}
                 whileTap={{ scale: 0.95 }}
               >
-               <Card className="bg-gradient-to-br from-white to-yellow-200 neon-border transition-all duration-500 cursor-dice h-full">
+               <Card className="bg-gradient-to-br from-yellow-600 to-yellow-800 neon-border transition-all duration-500 cursor-dice h-full">
   <CardContent className="p-6 text-center h-full flex flex-col justify-between">
     <div>
       <motion.div
@@ -612,26 +623,19 @@ export default function HomePage() {
         {doc.icon}
       </motion.div>
       <h3
-        className="text-3xl font-black text-white mb-3 font-bangers"
-        style={{ textShadow: "0 2px 12px #facc15, 0 1px 4px #000" }}
+        className="text-4xl font-black text-white tracking-wider mb-6 font-bangers"
+   
       >
         {doc.title}
       </h3>
       <p
-        className="text-lg text-white font-bold font-bangers mb-6"
-        style={{ textShadow: "0 2px 8px #facc15, 0 1px 2px #000" }}
+        className="text-2xl text-white font-bold tracking-wider font-bangers mb-6"
+       
       >
         {doc.desc}
       </p>
     </div>
-    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-      <Button
-        className="neon-button font-black text-white px-10 text-2xl w-full font-bangers cursor-rocket"
-        onClick={() => window.open(doc.link, "_blank")}
-      >
-        📖 READ MORE
-      </Button>
-    </motion.div>
+   
   </CardContent>
 </Card>
               </motion.div>
@@ -653,7 +657,7 @@ export default function HomePage() {
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <motion.h2
-              className="text-7xl font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-800 mb-12 glitch font-bangers cursor-money"
+              className="text-7xl font-black text-center tracking-wider text-transparent bg-clip-text  mb-12 text-white font-bangers cursor-money"
               data-text="💎 TOKENOMICS DETAILS💎"
               initial={{ scale: 0, rotate: 180 }}
               whileInView={{ scale: 1, rotate: 0 }}
@@ -675,19 +679,19 @@ export default function HomePage() {
                <Card className="bg-gradient-to-br from-yellow-500 to-yellow-700 neon-border cursor-dice">
   <CardContent className="p-8">
     <motion.h3
-      className="text-3xl font-black text-white mb-6 neon-text font-bangers"
+      className="text-3xl font-black tracking-wider text-white mb-6  font-bangers"
       animate={{ scale: [1, 1.05, 1] }}
       transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
     >
       🔥 TOKEN DETAILS 🔥
     </motion.h3>
 
-                    <div className="space-y-4 text-[#b88406] font-bold font-bangers">
+                    <div className="space-y-4 text-white text-3xl tracking-wide font-bold font-bangers">
                       {[
-                        { label: "SYMBOL:", value: "$BOK", badge: "bg-white text-white" },
-                        { label: "NETWORK:", value: "SOLANA ", badge: "bg-yellow-300 text-white" },
-                        { label: "SUPPLY:", value: "1,000,000,000 COB", badge: null },
-                        { label: "TAX:", value: "0/0 FAIR! 🚀", badge: "bg-white text-white" },
+                        { label: "SYMBOL:", value: "$BOK", badge: "text-3xl text-white" },
+                        { label: "NETWORK:", value: "SOLANA ", badge: " text-white" },
+                        { label: "SUPPLY:", value: "1,000,000,000 COB", badge: "text-3xl text-white" },
+                        { label: "TAX:", value: "0/0 FAIR! 🚀", badge: " text-white" },
                       ].map((item, index) => (
                         <motion.div
                           key={index}
@@ -708,15 +712,20 @@ export default function HomePage() {
                       ))}
                     </div>
 
-    <div className="mt-6 p-4 bg-black/50 rounded-lg neon-border cursor-money">
-      <p className="text-lg text-yellow-200 mb-2 font-bold font-bangers">CONTRACT ADDRESS:</p>
-      <div className="flex items-center gap-2 text-xs font-mono text-white bg-yellow-900 p-2 rounded">
-        <span className="flex-1 truncate">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
-        <Button size="sm" className="neon-button p-1 cursor-rocket">
-          <Copy className="w-10 h-10" />
-        </Button>
-      </div>
-    </div>
+                <div className="mt-6 p-4 bg-black/50 rounded-lg neon-border cursor-money relative">
+                  <p className="text-2xl text-center text-yellow-200 mb-2 font-bold tracking-wider font-bangers">CONTRACT ADDRESS:</p>
+                  <div className="flex items-center gap-2 text-xs font-mono text-white bg-yellow-900 p-2 rounded-full">
+                    <span className="flex-1 text-center px-8 truncate text-3xl">{contractAddress}</span>
+                    <Button size="sm" className="p-5 py-4 cursor-rocket" onClick={handleCopy}>
+                      <Copy className="w-15 h-15" />
+                    </Button>
+                  </div>
+                  {copied && (
+        <div className="absolute left-1/2 -translate-x-1/2 top-0 mt-2 bg-yellow-500 text-white font-bold px-6 py-2 rounded-xl shadow-lg z-50 text-2xl animate-fade-in-out">
+          BONKBET CA COPIED!
+        </div>
+      )}
+                </div>
   </CardContent>
 </Card>
 
@@ -732,41 +741,43 @@ export default function HomePage() {
                 <Card className="bg-gradient-to-br from-yellow-400 to-yellow-600 neon-border cursor-money">
                   <CardContent className="p-8">
                     <motion.h3
-                      className="text-3xl font-black text-white mb-6 text-center neon-text font-bangers"
+                      className="text-5xl font-black text-white mb-6 text-center font-bangers"
                       animate={{ scale: [1, 1.05, 1] }}
                       transition={{ duration: 2.5, repeat: Number.POSITIVE_INFINITY }}
                     >
                       ⚡ UTILITY POWER! ⚡
                     </motion.h3>
 
-                    <div className="space-y-4 text-white text-2xl  text-center font-bold font-bangers">
-                      {[
-                        { icon: "🎮", text: "PLAY GAMES WITH $KOB!" },
-                        { icon: "🎁", text: "EARN CASINO PROFITS!" },
-                        { icon: "🗳️", text: "VOTE ON EVERYTHING!" },
-                        { icon: "🎟️", text: "NFT PERKS ACCESS!" },
-                        { icon: "💎", text: "STAKE FOR MORE $KOB!" },
-                      ].map((item, index) => (
-                        <motion.div
-                          key={index}
-                          className="flex items-center gap-3 text-white font-bold font-bangers"
-                          initial={{ opacity: 0, x: -30 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ delay: index * 0.1 }}
-                          viewport={{ once: true }}
-                          whileHover={{ scale: 1.05, x: 10 }}
-                        >
-                          <motion.span
-                            className="text-2xl"
-                            animate={{ rotate: [0, 10, -10, 0] }}
-                            transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
-                          >
-                            {item.icon}
-                          </motion.span>
-                          <span className="hover:neon-text text-center">{item.text}</span>
-                        </motion.div>
-                      ))}
-                    </div>
+                          <div className="space-y-4 text-white text-3xl mb-10 wide justify-center font-bold font-bangers text-center">
+                            {[
+                              { icon: "🎮", text: "PLAY GAMES WITH $KOB!" },
+                              { icon: "🎁", text: "EARN CASINO PROFITS!" },
+                              { icon: "🗳️", text: "VOTE ON EVERYTHING!" },
+                              { icon: "🎟️", text: "NFT PERKS ACCESS!" },
+                              { icon: "💎", text: "STAKE FOR MORE $KOB!" },
+                            ].map((item, index) => (
+                              <motion.div
+                                key={index}
+                                className="flex flex-col-2 text-center gap-3 tracking-wider text-white font-bold font-bangers"
+                                initial={{ opacity: 0, x: -30 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                                whileHover={{ scale: 1.05, x: 10 }}
+                              >
+                                <motion.span
+                                  className="text-1xl"
+                                  animate={{ rotate: [0, 10, -10, 0] }}
+                                  transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
+                                >
+                                  {item.icon}
+                                </motion.span>
+                                <span className="hover:neon-text text-center">{item.text}</span>
+                              </motion.div>
+                            ))}
+                          </div>
+
+              
                   </CardContent>
                 </Card>
               </motion.div>
@@ -789,7 +800,7 @@ export default function HomePage() {
 
         <div className="relative container mx-auto px-4 text-center">
           <motion.h2
-            className="text-8xl font-black text-white mb-8 glitch font-bangers cursor-rocket"
+            className="text-8xl font-black text-white mb-8 tracking-wider  font-bangers cursor-rocket"
             data-text="READY TO JOIN THE BONKBET REVOLUTION?!"
             initial={{ scale: 0, rotate: -180 }}
             whileInView={{ scale: 1, rotate: 0 }}
@@ -802,7 +813,7 @@ export default function HomePage() {
           </motion.h2>
 
           <motion.p
-            className="text-3xl font-black text-white mb-12 font-bangers cursor-dice"
+            className="text-3xl font-black text-white mb-12 tracking-wider font-bangers cursor-dice"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3, type: "tween", stiffness: 80 }}
@@ -837,7 +848,7 @@ export default function HomePage() {
               >
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-white to-yellow-200 font-black text-black text-xl px-8 py-6 neon-border transition-all duration-300 font-bangers cursor-rocket hover:from-yellow-100 hover:to-white"
+                  className="bg-gradient-to-r from-white to-yellow-200 font-black text-yellow-800 text-3xl px-8 py-6 neon-border transition-all duration-300 font-bangers cursor-rocket hover:from-yellow-100 hover:to-white"
                   onClick={() => window.open(button.link, "_blank")}
                 >
                   {button.text}
@@ -878,3 +889,16 @@ export default function HomePage() {
     </div>
   )
 }
+
+// Add this to your global CSS or Tailwind config for fade animation if you want:
+{/* 
+@keyframes fade-in-out {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.animate-fade-in-out {
+  animation: fade-in-out 1.5s both;
+}
+*/}
