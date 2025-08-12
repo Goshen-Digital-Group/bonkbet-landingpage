@@ -31,9 +31,9 @@ export function Footer() {
             <h3 className="font-black text-3xl mb-6 text-white font-bangers">🔗 QUICK LINKS</h3>
             <div className="space-y-3">
               {[
-                { name: "🎰 BONKBET Games", href: "/casino" },
-                { name: "💎 $BB   Token", href: "/token" },
-                { name: "🖼️ NFT Collection", href: "/nfts" },
+                { name: "🎰 BONKBET Games", href: "https://play.bonkbet.live/" },
+                { name: "💎 $BB   Token", href: "#" },
+                { name: "🖼️ NFT Collection", href: "#" },
                 { name: "📚 Documentation", href: "https://docs.bonkbet.live/" },
               ].map((link) => (
                 <Link
@@ -52,10 +52,9 @@ export function Footer() {
             <h3 className="font-black text-3xl mb-6 text-white font-bangers">👥 COMMUNITY</h3>
           <div className="space-y-3">
                 {[
-                  { icon: <Twitter className="w-5 h-5" />, name: "Twitter/X", href: "#" },
-                  { icon: <MessageCircle className="w-5 h-5" />, name: "Telegram", href: "#" },
-                  { icon: <MessageCircle className="w-5 h-5" />, name: "Discord", href: "#" },
-                  { icon: <Github className="w-5 h-5" />, name: "GitHub", href: "#" },
+                  { icon: <Twitter className="w-5 h-5" />, name: "Twitter/X", href: "https://x.com/BonkBetSolana" },
+                  { icon: <MessageCircle className="w-5 h-5" />, name: "Discord", href: "https://discord.com/invite/QvYYUcwX" },
+                  { icon: <Github className="w-5 h-5" />, name: "GitHub", href: "https://github.com/Goshen-Digital-Group/bonkbet" },
                 ].map((social) => (
                   <a
                     key={social.name}
