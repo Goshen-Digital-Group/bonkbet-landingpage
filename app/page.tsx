@@ -287,13 +287,19 @@ export default function HomePage() {
       </section>
 
       {/* WHAT IS BONKBET */}
-      <motion.section
-        className="py-20 bg-gradient-to-r from-yellow-500 via-yellow-400 to-white relative"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
+   <motion.section
+      className="py-20 p-10 px-4 relative"
+      style={{
+        backgroundImage: "url('/images/whatisbonk-bg-02.svg')", // Replace with your image path
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+>
         <div className="absolute inset-0 retro-grid opacity-30"></div>
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
