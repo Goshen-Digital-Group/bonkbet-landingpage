@@ -6,14 +6,14 @@ import { Footer } from "@/components/footer"
 import { bangers } from "@/lib/fonts"
 
 export const metadata: Metadata = {
-  title: "BonkBet - The First-Ever Let'sBonk Casino on Solana",
+  title: "BonkBet - The First-Ever LetsBonk Casino on Solana",
   description:
-    "Degens play here. Bonk is the house. A decentralized, community-driven casino built on Solana with meme coin energy and provably fair games.",
+    "A Solana-based on-chain casino providing a secure, transparent, community-driven, and provably fair gaming experience powered by #BONK.",
   generator: 'BonkBet',
   openGraph: {
-    title: "BonkBet - The First-Ever Let'sBonk Casino on Solana",
+    title: "BonkBet - The First-Ever LetsBonk Casino on Solana",
     description:
-      "Degens play here. Bonk is the house. A decentralized, community-driven casino built on Solana with meme coin energy and provably fair games.",
+      "A Solana-based on-chain casino providing a secure, transparent, community-driven, and provably fair gaming experience powered by #BONK.",
     url: "https://bonkbet.live",
     siteName: "BonkBet",
     images: [
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
       },
     ],
     locale: "en_US",
-    type: "website",
+    type: "website",                                                                                                                                                        
   },
   twitter: {
     card: "summary_large_image",
-    title: "BonkBet - The First-Ever Let'sBonk Casino on Solana",
+    title: "BonkBet - The First-Ever LetsBonk Casino on Solana",
     description:
-      "Degens play here. Bonk is the house. A decentralized, community-driven casino built on Solana with meme coin energy and provably fair games.",
+      "A Solana-based on-chain casino providing a secure, transparent, community-driven, and provably fair gaming experience powered by #BONK.",
     images: ["/images/Bonkbet-banner.png"],
     creator: "@bonkbetcasino",
   },
