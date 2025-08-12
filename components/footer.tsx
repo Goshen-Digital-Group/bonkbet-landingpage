@@ -6,7 +6,18 @@ import { Twitter, MessageCircle, Github } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-black via-yellow-900 to-black border-t-4 border-yellow-400 ">
+    <footer className=" border-yellow-400 "
+     style={{
+    backgroundImage: `url('images/BONKBETLIVE-Section-bg-02.svg')`, // ✅ Correct!
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+
+
+    >
+
+      
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}

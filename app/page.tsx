@@ -203,7 +203,6 @@ export default function HomePage() {
             </motion.div>
           </motion.div>
 
-
           <motion.div
             className="text-4xl font-black text-white mb-2 tracking-wide font-bangers cursor-money leading-snug"
             style={{ textShadow: "0 2px 16px #facc15, 0 1px 8px #000" }}
@@ -224,28 +223,59 @@ export default function HomePage() {
             🔥 DEGENS PLAY HERE 🔥
           </motion.div>
 
-            <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-black/50 rounded-lg neon-border cursor-money relative">
-            <p className="text-xs sm:text-base md:text-xl lg:text-2xl text-center text-yellow-200 mb-2 font-bold tracking-wider font-bangers">
+          <div className="mt-4 sm:mt-6 relative">
+            <p className="text-xs sm:text-base md:text-xl lg:text-2xl text-white font-bold font-bangers mb-3 tracking-wider text-center mx-auto max-w-fit px-4 py-1.5 bg-black/30 rounded-full shadow-inner backdrop-blur-sm whitespace-nowrap">
               CONTRACT ADDRESS
             </p>
-            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm md:text-base font-mono text-white bg-yellow-900 p-2 sm:p-3 rounded-full w-full max-w-full overflow-x-auto">
-              <span className="flex-1 text-center px-2 sm:px-4 md:px-8 truncate text-xs sm:text-base md:text-xl lg:text-2xl">
-              {contractAddress}
+
+            {/* Flex container for address + button */}
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 bg-yellow-900 font-mono text-white p-2 sm:p-3 rounded-full w-full max-w-lg mx-auto">
+              {/* Truncated Contract Address */}
+              <span className="flex-1 text-center text-xs sm:text-base md:text-xl lg:text-2xl px-2 sm:px-4 truncate">
+                {contractAddress
+                  ? `${contractAddress.slice(0, 6)}...${contractAddress.slice(
+                      -6
+                    )}`
+                  : "Loading..."}
               </span>
+
+              {/* Copy Button - Position-Friendly */}
               <Button
-              size="sm"
-              className="p-2 sm:p-3 md:p-5 py-2 sm:py-3 md:py-4 cursor-rocket"
-              onClick={handleCopy}
+                size="sm"
+                className="
+       
+            p-2 sm:p-3 
+            py-2 sm:py-3 md:py-4 
+            bg-yellow-500 
+            hover:bg-yellow-400 
+            text-white 
+            cursor-rocket 
+            transition-transform 
+            hover:scale-110 
+            active:scale-95
+
+     
+            rounded-full 
+            shadow-md 
+            z-10
+
+            shrink-0
+          "
+                onClick={handleCopy}
+                aria-label="Copy contract address"
               >
-              <Copy className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
+                <Copy className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
               </Button>
             </div>
+
+            {/* Copy Confirmation Tooltip */}
             {copied && (
-              <div className="absolute left-1/2 -translate-x-1/2 top-0 mt-2 bg-yellow-500 text-white font-bold px-2 sm:px-4 md:px-6 py-1 sm:py-2 rounded-xl shadow-lg z-50 text-xs sm:text-base md:text-xl lg:text-2xl animate-fade-in-out">
-              BONKBET CA COPIED!
+              <div className="absolute left-1/2 top-0 -translate-x-1/2 -mt-12 bg-yellow-500 text-white font-bold px-4 py-2 rounded-xl shadow-lg z-50 text-sm sm:text-base md:text-xl animate-fade-in-out whitespace-nowrap">
+                BONKBET CA COPIED!
               </div>
             )}
-            </div>
+          </div>
+
           <br />
 
           <motion.div
@@ -322,13 +352,19 @@ export default function HomePage() {
       </section>
 
       {/* WHAT IS BONKBET */}
-      <motion.section
-        className="py-20 bg-gradient-to-r from-yellow-500 via-yellow-400 to-white relative"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
+    <motion.section
+  className="py-20 bg-cover bg-center bg-no-repeat relative"
+  style={{
+    backgroundImage: `url('/images/whatisbonk-bg-02.svg')`, // ✅ Correct!
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: true }}
+>
         <div className="absolute inset-0 retro-grid opacity-30"></div>
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
@@ -497,6 +533,13 @@ export default function HomePage() {
       <motion.section
         className="py-20 bg-gradient-to-br from-yellow-200 via-yellow-100 to-white relative"
         initial={{ opacity: 0 }}
+               style={{
+              backgroundImage: `url('images/BONKBETLIVE-Section-bg-02.svg')`, // ✅ Correct!
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              textShadow: "0 2px 16px #facc15, 0 1px 8px #000",
+            }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
@@ -510,6 +553,7 @@ export default function HomePage() {
             className="text-7xl font-black text-center text-white mb-6 font-bangers tracking-wide cursor-dice"
             style={{ textShadow: "0 2px 16px #facc15, 0 1px 8px #000" }}
             initial={{ y: -100, opacity: 0 }}
+            
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "tween", stiffness: 100, damping: 15 }}
             viewport={{ once: true }}
@@ -520,7 +564,7 @@ export default function HomePage() {
           </motion.h2>
 
           <motion.p
-            className="text-center text-yellow-800 mb-12 text-4xl font-bold tracking-wider  font-bangers cursor-money"
+            className="text-center text-white mb-12 text-4xl font-bold tracking-wider  font-bangers cursor-money"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ delay: 0.3, type: "tween", stiffness: 100 }}
@@ -614,6 +658,12 @@ export default function HomePage() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
+         style={{
+          backgroundImage: `url('images/bonkbet-documentaion-bg-06.svg')`, // ✅ Correct!
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
       >
         <div className="absolute inset-0 retro-grid opacity-30"></div>
         <div className="relative container mx-auto px-4">
@@ -705,6 +755,14 @@ export default function HomePage() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
+         style={{
+          backgroundImage: `url('images/TOKENOMICS DETAILS-bg-04.svg')`, // ✅ Correct!
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+
+
       >
         <div className="absolute inset-0 retro-grid"></div>
 
@@ -883,13 +941,27 @@ export default function HomePage() {
       </motion.section>
 
       {/* FINAL CTA */}
-      <motion.section
-        className="py-20 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 relative overflow-hidden"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
+    <motion.section
+  className="py-20 bg-cover bg-center bg-no-repeat relative overflow-hidden"
+  style={{
+    backgroundImage: `url('/images/REVOLUTION-section-bg-05.svg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: true }}
+>
+  {/* ✅ 70% Opacity Color Overlay */}
+  <div
+    className="absolute inset-0"
+    style={{
+      backgroundColor: '#ffaf3b', // Brown color (you can change this)
+      opacity: 0.7, // 70% opacity
+    }}
+  ></div>
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width=100 height=100 viewBox=0 0 100 100 xmlns=http://www.w3.org/2000/svg%3E%3Cpath d=M50 5L61.8 38.2L95 38.2L69.1 61.8L80.9 95L50 71.4L19.1 95L30.9 61.8L5 38.2L38.2 38.2L50 5Z fill=%23fff700 fillOpacity=0.1/%3E%3C/svg%3E')] animate-pulse"></div>
         </div>
