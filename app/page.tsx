@@ -654,10 +654,10 @@ export default function HomePage() {
       >
         <div className="absolute inset-0 retro-grid"></div>
 
-        <div className="relative container mx-auto px-4">
+        <div className="relative container mx-auto px-2 sm:px-4">
           <div className="max-w-6xl mx-auto">
             <motion.h2
-              className="text-7xl font-black text-center tracking-wider text-transparent bg-clip-text  mb-12 text-white font-bangers cursor-money"
+              className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-center tracking-wider text-transparent bg-clip-text mb-8 sm:mb-12 text-white font-bangers cursor-money"
               data-text="💎 TOKENOMICS DETAILS💎"
               initial={{ scale: 0, rotate: 180 }}
               whileInView={{ scale: 1, rotate: 0 }}
@@ -665,33 +665,34 @@ export default function HomePage() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.05, rotate: [0, -1, 1, 0] }}
             >
-            💎 TOKENOMICS DETAILS💎
+              💎 TOKENOMICS DETAILS💎
             </motion.h2>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="flex flex-col lg:flex-row gap-8">
+              {/* TOKEN DETAILS CARD */}
               <motion.div
+                className="flex-1"
                 initial={{ x: -200, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ type: "tween", stiffness: 80, damping: 15 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.02, rotate: [0, -0.5, 0.5, 0] }}
               >
-               <Card className="bg-gradient-to-br from-yellow-500 to-yellow-700 neon-border cursor-dice">
-  <CardContent className="p-8">
-    <motion.h3
-      className="text-3xl font-black tracking-wider text-white mb-6  font-bangers"
-      animate={{ scale: [1, 1.05, 1] }}
-      transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-    >
-      🔥 TOKEN DETAILS 🔥
-    </motion.h3>
+                <Card className="bg-gradient-to-br from-yellow-500 to-yellow-700 neon-border cursor-dice h-full">
+                  <CardContent className="p-4 sm:p-8 flex flex-col h-full">
+                    <motion.h3
+                      className="text-xl sm:text-2xl md:text-3xl font-black tracking-wider text-white mb-4 sm:mb-6 font-bangers"
+                      animate={{ scale: [1, 1.05, 1] }}
+                      transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
+                    >
+                      🔥 TOKEN DETAILS 🔥
+                    </motion.h3>
 
-                    <div className="space-y-4 text-white text-3xl tracking-wide font-bold font-bangers">
+                    <div className="space-y-3 sm:space-y-4 text-white text-base sm:text-xl md:text-2xl lg:text-3xl tracking-wide font-bold font-bangers">
                       {[
-                        { label: "SYMBOL:", value: "$BB", badge: "text-3xl text-white" },
-                        { label: "NETWORK:", value: "SOLANA ", badge: " text-white" },
-                        { label: "SUPPLY:", value: "1,000,000,000 $BB", badge: "text-3xl text-white" },
-                        { label: "TAX:", value: "0/0 FAIR! 🚀", badge: " text-white" },
+                        { label: "SYMBOL:", value: "$BB", badge: "text-base sm:text-xl md:text-2xl lg:text-3xl text-white" },
+                        { label: "NETWORK:", value: "SOLANA ", badge: "text-white" },
+                        { label: "SUPPLY:", value: "1,000,000,000 $BB", badge: "text-base sm:text-xl md:text-2xl lg:text-3xl text-white" },
+                        { label: "TAX:", value: "0/0 FAIR! 🚀", badge: "text-white" },
                       ].map((item, index) => (
                         <motion.div
                           key={index}
@@ -702,9 +703,9 @@ export default function HomePage() {
                           viewport={{ once: true }}
                           whileHover={{ scale: 1.05, x: 10 }}
                         >
-                          <span>{item.label}</span>
+                          <span className="text-sm sm:text-base md:text-xl">{item.label}</span>
                           {item.badge ? (
-                            <Badge className={`${item.badge} font-black text-lg font-bangers`}>{item.value}</Badge>
+                            <Badge className={`${item.badge} font-black font-bangers`}>{item.value}</Badge>
                           ) : (
                             <span className="text-yellow-200 neon-text">{item.value}</span>
                           )}
@@ -712,73 +713,74 @@ export default function HomePage() {
                       ))}
                     </div>
 
-                <div className="mt-6 p-4 bg-black/50 rounded-lg neon-border cursor-money relative">
-                  <p className="text-2xl text-center text-yellow-200 mb-2 font-bold tracking-wider font-bangers">CONTRACT ADDRESS:</p>
-                  <div className="flex items-center gap-2 text-xs font-mono text-white bg-yellow-900 p-2 rounded-full">
-                    <span className="flex-1 text-center px-8 truncate text-3xl">{contractAddress}</span>
-                    <Button size="sm" className="p-5 py-4 cursor-rocket" onClick={handleCopy}>
-                      <Copy className="w-15 h-15" />
-                    </Button>
-                  </div>
-                  {copied && (
-        <div className="absolute left-1/2 -translate-x-1/2 top-0 mt-2 bg-yellow-500 text-white font-bold px-6 py-2 rounded-xl shadow-lg z-50 text-2xl animate-fade-in-out">
-          BONKBET CA COPIED!
-        </div>
-      )}
+                    <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-black/50 rounded-lg neon-border cursor-money relative">
+                <p className="text-base sm:text-xl md:text-2xl text-center text-yellow-200 mb-2 font-bold tracking-wider font-bangers">
+                  CONTRACT ADDRESS:
+                </p>
+                <div className="flex flex-col sm:flex-row items-center gap-2 text-xs font-mono text-white bg-yellow-900 p-2 rounded-full">
+                  <span className="flex-1 text-center px-2 sm:px-8 truncate text-base sm:text-xl md:text-2xl">
+                    {contractAddress}
+                  </span>
+                  <Button size="sm" className="p-3 sm:p-5 py-2 sm:py-4 cursor-rocket" onClick={handleCopy}>
+                    <Copy className="w-8 h-8 sm:w-10 sm:h-10" />
+                  </Button>
                 </div>
-  </CardContent>
-</Card>
-
-              </motion.div>
-
-              <motion.div
-                initial={{ x: 200, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{ type: "tween", stiffness: 80, damping: 15 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.02, rotate: [0, 0.5, -0.5, 0] }}
-              >
-                <Card className="bg-gradient-to-br from-yellow-400 to-yellow-600 neon-border cursor-money">
-                  <CardContent className="p-8">
-                    <motion.h3
-                      className="text-5xl font-black text-white mb-6 text-center font-bangers"
-                      animate={{ scale: [1, 1.05, 1] }}
-                      transition={{ duration: 2.5, repeat: Number.POSITIVE_INFINITY }}
-                    >
-                      ⚡ UTILITY POWER! ⚡
-                    </motion.h3>
-
-                          <div className="space-y-4 text-white text-3xl mb-10 wide justify-center font-bold font-bangers text-center">
-                            {[
-                              { icon: "🎮", text: "PLAY GAMES WITH $BB!" },
-                              { icon: "🗳️", text: "VOTE ON EVERYTHING!" },
-                              { icon: "🎟️", text: "NFT PERKS ACCESS!" },
-                            ].map((item, index) => (
-                              <motion.div
-                                key={index}
-                                className="flex flex-col-2 text-center gap-3 tracking-wider text-white font-bold font-bangers"
-                                initial={{ opacity: 0, x: -30 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ delay: index * 0.1 }}
-                                viewport={{ once: true }}
-                                whileHover={{ scale: 1.05, x: 10 }}
-                              >
-                                <motion.span
-                                  className="text-1xl"
-                                  animate={{ rotate: [0, 10, -10, 0] }}
-                                  transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
-                                >
-                                  {item.icon}
-                                </motion.span>
-                                <span className="hover:neon-text text-center">{item.text}</span>
-                              </motion.div>
-                            ))}
-                          </div>
-
-              
+                {copied && (
+                  <div className="absolute left-1/2 -translate-x-1/2 top-0 mt-2 bg-yellow-500 text-white font-bold px-4 sm:px-6 py-2 rounded-xl shadow-lg z-50 text-base sm:text-xl md:text-2xl animate-fade-in-out">
+                    BONKBET CA COPIED!
+                  </div>
+                )}
+              </div>
                   </CardContent>
                 </Card>
               </motion.div>
+
+              {/* UTILITY POWER CARD */}
+              <motion.div
+    className="flex-1"
+    initial={{ x: 200, opacity: 0 }}
+    whileInView={{ x: 0, opacity: 1 }}
+    transition={{ type: "tween", stiffness: 80, damping: 15 }}
+    viewport={{ once: true }}
+  >
+    <Card className="bg-gradient-to-br from-yellow-400 to-yellow-600 neon-border cursor-money h-full">
+      <CardContent className="p-4 sm:p-8 flex flex-col h-full">
+        <motion.h3
+          className="text-2xl sm:text-5xl font-black text-white mb-4 sm:mb-6 text-center font-bangers"
+          animate={{ scale: [1, 1.05, 1] }}
+          transition={{ duration: 2.5, repeat: Number.POSITIVE_INFINITY }}
+        >
+          ⚡ UTILITY POWER! ⚡
+        </motion.h3>
+
+        <div className="space-y-3 sm:space-y-4 text-white text-xl sm:text-3xl mb-6 sm:mb-10 font-bold font-bangers text-center">
+          {[
+            { icon: "🎮", text: "PLAY GAMES WITH $BB!" },
+            { icon: "🗳️", text: "VOTE ON EVERYTHING!" },
+            { icon: "🎟️", text: "NFT PERKS ACCESS!" },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              className="flex flex-col items-center gap-2 sm:gap-3 tracking-wider text-white font-bold font-bangers"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <motion.span
+                className="text-3xl sm:text-5xl"
+                animate={{ rotate: [0, 10, -10, 0] }}
+                transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
+              >
+                {item.icon}
+              </motion.span>
+              <span className="hover:neon-text text-center">{item.text}</span>
+            </motion.div>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  </motion.div>
             </div>
           </div>
         </div>
