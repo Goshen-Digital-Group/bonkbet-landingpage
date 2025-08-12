@@ -658,6 +658,12 @@ export default function HomePage() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
+         style={{
+          backgroundImage: `url('images/bonkbet-documentaion-bg-06.svg')`, // ✅ Correct!
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
       >
         <div className="absolute inset-0 retro-grid opacity-30"></div>
         <div className="relative container mx-auto px-4">
@@ -749,6 +755,14 @@ export default function HomePage() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
+         style={{
+          backgroundImage: `url('images/TOKENOMICS DETAILS-bg-04.svg')`, // ✅ Correct!
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+
+
       >
         <div className="absolute inset-0 retro-grid"></div>
 
@@ -927,13 +941,27 @@ export default function HomePage() {
       </motion.section>
 
       {/* FINAL CTA */}
-      <motion.section
-        className="py-20 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400 relative overflow-hidden"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
+    <motion.section
+  className="py-20 bg-cover bg-center bg-no-repeat relative overflow-hidden"
+  style={{
+    backgroundImage: `url('/images/REVOLUTION-section-bg-05.svg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: true }}
+>
+  {/* ✅ 70% Opacity Color Overlay */}
+  <div
+    className="absolute inset-0"
+    style={{
+      backgroundColor: '#ffaf3b', // Brown color (you can change this)
+      opacity: 0.7, // 70% opacity
+    }}
+  ></div>
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width=100 height=100 viewBox=0 0 100 100 xmlns=http://www.w3.org/2000/svg%3E%3Cpath d=M50 5L61.8 38.2L95 38.2L69.1 61.8L80.9 95L50 71.4L19.1 95L30.9 61.8L5 38.2L38.2 38.2L50 5Z fill=%23fff700 fillOpacity=0.1/%3E%3C/svg%3E')] animate-pulse"></div>
         </div>
