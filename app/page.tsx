@@ -110,7 +110,7 @@ export default function HomePage() {
 
   // Add state for copy notification
   const [copied, setCopied] = useState(false);
-  const contractAddress = "HqAPu1TmXfrqMsvgXQVC5WrcYCpfn7D7c46FT8kktfWz"; // Replace with your real address
+  const contractAddress = "xxxxxxxxxxxxxxx"; // Replace with your real address
 
   const handleCopy = () => {
     navigator.clipboard.writeText(contractAddress);
